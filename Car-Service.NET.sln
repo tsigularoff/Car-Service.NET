@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Data", "CarServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.DataModels", "CarService.DataModels\CarService.DataModels.csproj", "{47F51BC7-1B03-4D74-9C12-6CEFFC719577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Web", "CarService.Web\CarService.Web.csproj", "{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Web", "CarService.Web\CarService.Web.csproj", "{A2D2F39F-7812-4DFE-A2A4-BD891346616B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D2F39F-7812-4DFE-A2A4-BD891346616B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D2F39F-7812-4DFE-A2A4-BD891346616B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D2F39F-7812-4DFE-A2A4-BD891346616B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D2F39F-7812-4DFE-A2A4-BD891346616B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
