@@ -243,6 +243,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarService.Data\CarService.Data.csproj">
+      <Project>{0dbaffdc-469c-4ba6-80fc-4fb8bb917d6a}</Project>
+      <Name>CarService.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarService.Models\CarService.Models.csproj">
+      <Project>{b4903648-d568-4c61-ada9-abf7d84b292f}</Project>
+      <Name>CarService.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

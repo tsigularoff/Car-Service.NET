@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CarService.Web.Models;
+using CarService.Models;
 
 namespace CarService.Web.Controllers
 {
