@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Data", "CarService.Data\CarService.Data.csproj", "{0DBAFFDC-469C-4BA6-80FC-4FB8BB917D6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.DataModels", "CarService.DataModels\CarService.DataModels.csproj", "{47F51BC7-1B03-4D74-9C12-6CEFFC719577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService.Web", "CarService.Web\CarService.Web.csproj", "{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBAFFDC-469C-4BA6-80FC-4FB8BB917D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBAFFDC-469C-4BA6-80FC-4FB8BB917D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBAFFDC-469C-4BA6-80FC-4FB8BB917D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBAFFDC-469C-4BA6-80FC-4FB8BB917D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F51BC7-1B03-4D74-9C12-6CEFFC719577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C2AFD8F-6F6F-4947-A5AF-D69937F48C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
