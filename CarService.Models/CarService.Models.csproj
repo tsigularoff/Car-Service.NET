@@ -53,6 +53,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationsUser.cs" />
+    <Compile Include="Manufacturer.cs" />
+    <Compile Include="CarModel.cs" />
+    <Compile Include="CarService.cs" />
+    <Compile Include="CarServiceCenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
