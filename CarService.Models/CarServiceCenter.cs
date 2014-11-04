@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CarService.Models
+{    
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;    
 
-namespace CarService.Models
-{
     public class CarServiceCenter
     {
         public CarServiceCenter()
@@ -16,6 +13,7 @@ namespace CarService.Models
 
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
         public string Location { get; set; }
