@@ -7,8 +7,7 @@
     {
         public CarServiceCenter()
         {
-            this.SupportedCars = new HashSet<CarModel>();
-            this.SupportedServices = new HashSet<CarService>();
+            this.CarServices = new HashSet<CarService>();
         }
 
         public int Id { get; set; }
@@ -24,8 +23,6 @@
 
         public virtual ApplicationUser Owner { get; set; }
 
-        public virtual ICollection<CarModel> SupportedCars { get; set; }
-
-        public virtual ICollection<CarService> SupportedServices { get; set; }
+        public virtual ICollection<CarService> CarServices { get; set; }
     }
 }

@@ -1,5 +1,7 @@
 ﻿namespace CarService.Models
 {
+    using System.Collections.Generic;
+
     public class CarModel
     {
         public int Id { get; set; }

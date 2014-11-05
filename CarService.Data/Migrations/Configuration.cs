@@ -4,8 +4,13 @@ namespace CarService.Data.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using System.Collections.Generic;
+    using System.Web.Hosting;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CarService.Data.CarServiceDbContext>
+    using CarService.Data.SeedData;
+    using CarService.Models;
+
+    public sealed class Configuration : DbMigrationsConfiguration<CarServiceDbContext>
     {
         public Configuration()
         {
@@ -13,20 +18,47 @@ namespace CarService.Data.Migrations
             this.AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(CarService.Data.CarServiceDbContext context)
+        protected override void Seed(CarServiceDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            var rootPath = HostingEnvironment.MapPath("~/");
+            var seedDataPath = rootPath + @"../CarService.Data/SeedData/CarModels.txt";
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            if (!context.Manufacturers.Any())
+            {
+
+                var manufacturers = CarModelsReader.GetCarDataFromFile(seedDataPath);
+
+                context.Manufacturers.AddOrUpdate(manufacturers.ToArray());
+            }
+
+            //if (!context.CarModles.Any())
+            //{                
+            //    var modelsAsStringArray = CarModelsReader.GetModels(seedDataPath);
+            //    var carModels = new List<CarModel>();
+
+            //    foreach (var carModel in modelsAsStringArray)
+            //    {
+            //        var year = int.Parse(carModel[0]);
+            //        var manufacturer = carModel[1];
+            //        var modelName = carModel[2];
+
+            //        var man = context.Manufacturers.FirstOrDefault(x => x.Name == manufacturer);
+                                        
+            //        var manId = man.Id;
+
+            //        var carModelItem = new CarModel()
+            //        {
+            //            Name = modelName,
+            //            Year = year,
+            //            ManufacturerId = manId
+            //        };
+
+            //        carModels.Add(carModelItem);                    
+            //    }
+
+            //    context.CarModles.AddOrUpdate(carModels.ToArray());
+            //}
+            
         }
     }
 }

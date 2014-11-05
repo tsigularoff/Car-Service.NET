@@ -43,5 +43,38 @@
 
             return (IRepository<T>)this.repositories[typeOfRepository];
         }
+
+
+        public IRepository<CarServiceCenter> CarServiceCenters
+        {
+            get
+            {
+                return this.GetRepository<CarServiceCenter>(); 
+            }
+        }
+
+        public IRepository<CarModel> CarModels
+        {
+            get 
+            {
+                return this.GetRepository<CarModel>();
+            }
+        }
+
+        public IRepository<CarService> CarServices
+        {
+            get
+            {
+                return this.GetRepository<CarService>();
+            }
+        }
+
+        public IRepository<Manufacturer> Manufacturers
+        {
+            get 
+            {
+                return this.GetRepository<Manufacturer>();    
+            }
+        }
     }
 }
