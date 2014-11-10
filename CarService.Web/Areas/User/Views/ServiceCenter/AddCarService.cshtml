@@ -1,0 +1,148 @@
+﻿@model IEnumerable<CarService.Web.Areas.User.Models.ManufacturerViewModel>
+
+@if (@TempData["successMessage"] != null)
+{
+    Html.RenderPartial("_SuccessMessage", TempData["successMessage"].ToString());
+}
+
+@if (@TempData["errorMessage"] != null)
+{
+    Html.RenderPartial("_ErrorMessage", TempData["errorMessage"].ToString());
+}
+
+<h2>
+    Add car services to
+    @if (TempData["serviceCenterName"] != null)
+    {
+        <span> @TempData["serviceCenterName"].ToString() </span>
+        <input id="selected-service-center" type="text" value='@TempData["serviceCenterName"].ToString()' style="display:none" />
+    }
+    else
+    {
+        <span>Service center</span>
+    }
+</h2>
+
+
+<div id="car-selection" class="form-horizontal">
+    <h3>Select car model</h3>
+
+    <div id="manufacturers-cnt" class="form-group">
+        <label for="manufacturers">Manufacturer</label>
+        @Html.DropDownList("manufacturers", new SelectList(Model, "Id", "Name"), new { @class = "form-control" })       
+    </div>
+
+    <div id="car-models-cnt" class="form-group">
+        <label for="car-models">Car model</label>
+        <select id="car-models" class="form-control"></select>
+    </div>
+
+    <div id="car-model-years-cnt" class="form-group">
+        <label for="car-model-years">Year</label>
+        <select id="car-model-years" class="form-control"></select>
+    </div>
+</div>
+
+<h3>Select service center</h3>
+
+<div id="service-center-cnt" class="form-horizontal">
+    <div class="form-group">
+        <label for="service-centers">Service center</label>
+        <select id="service-centers" class="form-control"></select>
+    </div>
+</div>
+
+<div>
+
+    @using (Html.BeginForm("AddCarService", "CarService", FormMethod.Post, new  { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+    <div class="form-group">
+        <label for="form-service-name">Service name</label>
+        <input id="form-service-name" name="Name" class="form-control" placeholder="Enter service" />
+    </div>        
+        <input id="form-car-model-name" name="CarModelName" hidden="hidden" />
+        <input id="form-year" name="Year" hidden="hidden" />
+        <input id="form-service-center-id" name="ServiceCenterId" hidden="hidden">
+        <input type="submit" value="Add service" class="btn btn-info" />
+        @Html.ActionLink("Back to home", "Index", "Home", new { area = "" }, new { @class = "btn btn-info" })
+    }
+       
+</div>
+
+@*@Scripts.Render("~/bundles/jquery")*@
+
+<script>
+    var carModelsUrl = "http://localhost:3587/User/Cars/GetModelsByManufacturer";
+    var carModelYearsUrl = "http://localhost:3587/User/Cars/GetModelYears";
+    var serviceCentersUrl = "http://localhost:3587/User/ServiceCenter/GetServiceCenters";
+
+    $("#manufacturers").change(GetCarModels);
+
+    $("#car-models").change(GetModelYears);
+
+    $("#service-centers").change(selectServiceCenterId);
+
+    $("#car-model-years").change(selectModelYear);
+
+    GetServiceCenters();
+
+    GetCarModels();
+
+    selectModelYear();   
+
+    function GetCarModels() {
+        var manId = $('#manufacturers option:selected').attr('value');
+
+        $.getJSON(carModelsUrl,
+            {
+                manufacturerId: manId
+            }, function (data) {
+                $("#car-models").children().remove();
+                bindDropDownListData(data, "#car-models");
+                GetModelYears();
+            })
+    }
+
+    function GetModelYears() {
+        var modelName = $("#car-models option:selected").attr("value");
+        $("#form-car-model-name").attr('value', modelName);
+        $.getJSON(carModelYearsUrl,
+            {
+                modelName: modelName
+            }, function (data) {                
+                $("#car-model-years").children().remove();
+                bindDropDownListData(data, "#car-model-years");
+                selectModelYear();
+            })
+    }
+
+    function bindDropDownListData(data, selector) {
+        $.each(data, function (i) {
+            var option = "<option data-id='" + (data[i].Id) + "'" + " value='" + (data[i].Name || data[i]) + "'>" + (data[i].Name || data[i]) + "</option>";
+            $(selector).append(option);
+        })
+    }
+
+    function GetServiceCenters() {
+        $.getJSON(serviceCentersUrl, null, function (data) {
+            bindDropDownListData(data, "#service-centers");
+            var serviceCenterId = $('#service-centers option:selected').attr('data-id');
+            
+            $('#form-service-center-id').attr('value', serviceCenterId);
+        });
+    }
+
+    function selectServiceCenterId() {
+        var serviceCenterId = $('#service-centers option:selected').attr('data-id');
+        $('#form-service-center-id').attr('value', serviceCenterId);
+    }
+
+    function selectModelYear() {
+        var year = $("#car-model-years option:selected").val();
+        $("#form-year").attr('value', year);
+    }
+</script>
+

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<CarService.Web.Areas.User.Models.CarViewModel>
+
+
+@using (Ajax.BeginForm("GetModelYears", "Cars", new AjaxOptions
+    {
+        UpdateTargetId = "car-model-years",
+        InsertionMode = InsertionMode.Replace
+    }))
+{
+    @Html.DropDownList("modelName", new SelectList(Model, "Name", "Name"))
+    <input type="submit" value="Select Model" />
+}
+
+<div id="car-model-years"></div>

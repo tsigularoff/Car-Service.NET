@@ -22,3 +22,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#homepage-jumbotron{
+    /*background-image : url('../Imgs/logos/index.jpg');
+    background-repeat :no-repeat;    
+    background-size :cover;
+    color : #bdb4b4;
+    height : 300px;*/
+}
+
+#list-car-models{
+    height : 150px;
+    overflow-y : auto;
+}
