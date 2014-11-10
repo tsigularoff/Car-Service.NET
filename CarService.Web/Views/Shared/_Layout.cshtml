@@ -28,8 +28,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">                    
-                    <li>@Html.ActionLink("Service centers", "ServiceCenters", "Public")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Service centers", "ServiceCenters", "Public", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, null)</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

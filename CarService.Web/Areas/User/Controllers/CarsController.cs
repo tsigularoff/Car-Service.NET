@@ -10,7 +10,7 @@
     using CarService.Web.Areas.User.Models;
     using CarService.Web.Infrastucture;
 
-    public class CarsController : BaseController
+    public class CarsController : UserAreaController
     {
 
         public CarsController(ICarServiceData data)

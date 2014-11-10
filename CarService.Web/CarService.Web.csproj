@@ -186,6 +186,7 @@
     <Compile Include="Areas\User\Controllers\CarServiceController.cs" />
     <Compile Include="Areas\User\Controllers\ManufacturersController.cs" />
     <Compile Include="Areas\User\Controllers\ServiceCenterController.cs" />
+    <Compile Include="Areas\User\Controllers\UserAreaController.cs" />
     <Compile Include="Areas\User\Models\CarServiceCenterViewModel.cs" />
     <Compile Include="Areas\User\Models\CarServiceOutputViewModel.cs" />
     <Compile Include="Areas\User\Models\CarServiceInputViewModel.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ServiceCenterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -1101,6 +1103,7 @@
     <Content Include="Scripts\kendo\kendo.window.min.js.map" />
     <Content Include="Views\Shared\_ErrorMessage.cshtml" />
     <Content Include="Views\Shared\_SuccessMessage.cshtml" />
+    <Content Include="Views\Templates\DisplayTemplates\StringHyperlink.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1108,6 +1111,7 @@
     <Folder Include="Areas\User\Views\CarService\" />
     <Folder Include="Areas\User\Views\Cars\" />
     <Folder Include="Areas\User\Views\Manufacturers\" />
+    <Folder Include="Areas\User\Views\UserArea\" />
     <Folder Include="Imgs\logos\" />
     <Folder Include="Lib\" />
   </ItemGroup>

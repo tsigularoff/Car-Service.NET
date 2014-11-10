@@ -11,7 +11,7 @@
     using CarService.Web.Controllers;
     using Kendo.Mvc.UI;
 
-    public class CarServiceController : BaseController
+    public class CarServiceController : UserAreaController
     {
         public CarServiceController(ICarServiceData data)
             : base(data)

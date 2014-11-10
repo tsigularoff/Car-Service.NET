@@ -14,7 +14,7 @@
     {
         public CarServiceDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
-        {
+        {            
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarServiceDbContext, Configuration>());  
         }
 

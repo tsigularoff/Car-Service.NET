@@ -11,7 +11,7 @@
 
     using AutoMapper.QueryableExtensions;
 
-    public class ServiceCenterController : BaseController
+    public class ServiceCenterController : UserAreaController
     {
         private const string SuccessMessage = "Service center created!";
 

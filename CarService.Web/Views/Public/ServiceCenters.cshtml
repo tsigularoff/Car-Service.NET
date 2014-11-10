@@ -1,7 +1,41 @@
-﻿
+﻿@using CarService.Web.Models;
+
 @{
     ViewBag.Title = "ServiceCenters";
 }
 
-<h2>ServiceCenters</h2>
+<h2>@ViewBag.Title</h2>
+
+@(Html.Kendo()
+    .Grid<ServiceCenterViewModel>()
+    .Name("service-centers")
+    .Columns(columns =>
+        {         
+            columns.Bound(model => model.Name);
+            columns.Bound(model => model.StreetAddress);
+        })
+        .ClientRowTemplate(
+        "<tr data-uid='#: uid #'>" +            
+            "<td>" +
+                        "<a href='~/Public/ServiceCenter/" + "#: Id #" + "'>" + "#: Name #" + "</a>" +                   
+            "</td>" +
+            "<td>" +
+                    "#: StreetAddress #" +
+            "</td>" +
+         "</tr>"
+        )
+        .Pageable(p =>
+            p.PageSizes(true)
+            .Refresh(true)                     
+        )
+        .Sortable()
+        .DataSource(data => {
+            data.Ajax()
+                .PageSize(10)
+                .ServerOperation(true)
+                .Read("GetServiceCenters", "Public");
+        })
+        
+    )
+
 

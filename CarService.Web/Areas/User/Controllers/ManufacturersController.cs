@@ -8,7 +8,7 @@
     using CarService.Web.Areas.User.Models;
     using AutoMapper.QueryableExtensions;
 
-    public class ManufacturersController : BaseController
+    public class ManufacturersController : UserAreaController
     {
         public ManufacturersController(ICarServiceData data)
             :base(data)

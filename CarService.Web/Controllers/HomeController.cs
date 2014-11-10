@@ -13,7 +13,7 @@
         {
         }
 
-        [OutputCache(Duration=10, VaryByParam="none")]       
+        //[OutputCache(Duration=10, VaryByParam="none")]       
         public ActionResult Index()
         {
             var serviceCentersCount = this.data.CarServiceCenters.All().Count();
