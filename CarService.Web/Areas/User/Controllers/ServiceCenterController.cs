@@ -4,12 +4,17 @@
     using System.Linq;
     using System.Collections.Generic;
 
+    using AutoMapper.QueryableExtensions;
+    using Kendo.Mvc.UI;
+    using Kendo.Mvc.Extensions;
+
     using CarService.Web.Controllers;
     using CarService.Data;
     using CarService.Web.Areas.User.Models;
     using CarService.Models;
+    using System;
 
-    using AutoMapper.QueryableExtensions;
+   
 
     public class ServiceCenterController : UserAreaController
     {
@@ -35,7 +40,9 @@
                 var serviceCenter = new CarServiceCenter
                 {
                     Name = serviceCenterModel.Name,
-                    StreetAddress = serviceCenterModel.StreetAddress
+                    StreetAddress = serviceCenterModel.StreetAddress,
+                    CreatedOn = DateTime.Now,
+                    ModifiedOn = DateTime.Now
                 };
 
                 this.data.CarServiceCenters.Add(serviceCenter);
@@ -59,6 +66,28 @@
             return View(manufacturers);
         }
 
+        public ActionResult ServiceCenters()
+        {
+            return View();
+        }
+
+        public ActionResult ServiceCenterDetails()
+        {
+            var serviceCenterId = int.Parse(this.Request.QueryString.GetValues("id")[0]);
+
+            var serviceCenter = this.data.CarServiceCenters
+                                        .All()
+                                        .Project().To<CarServiceCenterViewModel>()
+                                        .FirstOrDefault(x => x.Id == serviceCenterId);
+
+            if (serviceCenter == null)
+            {
+                RedirectToAction("ServiceCenters", "ServiceCenter");
+            }
+
+            return View(serviceCenter);
+        }
+
         public JsonResult GetServiceCenters()
         {
             var serviceCenters = this.data.CarServiceCenters
@@ -69,6 +98,13 @@
             return Json(serviceCenters, JsonRequestBehavior.AllowGet);
         }
 
-       
+        public JsonResult GetServiceCentersForGrid([DataSourceRequest]DataSourceRequest request)
+        {
+            var result = this.data.CarServiceCenters
+                .All()
+                .Project().To<CarServiceCenterViewModel>();
+
+            return Json(result.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
+        }
     }
 }

@@ -1,0 +1,22 @@
+﻿@using CarService.Web.Models
+@model IEnumerable<ServiceCenterViewModel>
+
+<h3>Last added service centers</h3>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">@item.Name</h3>
+            </div>
+            <div class="panel-body">
+                @item.StreetAddress
+            </div>
+        </div>
+    </div>
+   
+}
+
+
+

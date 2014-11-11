@@ -1,5 +1,6 @@
 ﻿namespace CarService.Models
-{    
+{
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;    
 
@@ -19,10 +20,14 @@
 
         public string StreetAddress { get; set; }
 
+        public DateTime CreatedOn { get; set; }
+
+        public DateTime ModifiedOn { get; set; }
+
         public string OwnerId { get; set; }
 
         public virtual ApplicationUser Owner { get; set; }
 
-        public virtual ICollection<CarService> CarServices { get; set; }
+        public virtual ICollection<CarService> CarServices { get; set; }        
     }
 }

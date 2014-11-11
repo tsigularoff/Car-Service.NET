@@ -4,12 +4,14 @@
     using System.Linq;
 
     using AutoMapper.QueryableExtensions;
+    using Kendo.Mvc.UI;
+    using Kendo.Mvc.Extensions;
 
     using CarService.Data;
     using CarService.Models;
     using CarService.Web.Areas.User.Models;
     using CarService.Web.Controllers;
-    using Kendo.Mvc.UI;
+
 
     public class CarServiceController : UserAreaController
     {
@@ -74,6 +76,18 @@
                 .ToList();
 
             return Json(modelServices, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetServiceCenterServices([DataSourceRequest]DataSourceRequest request, int id)
+        {
+            var result = this.data.CarServiceCenters
+                .All()
+                .FirstOrDefault(x=> x.Id == id)
+                .CarServices
+                .AsQueryable()
+                .Project().To<CarServiceOutputViewModel>();
+
+            return Json(result.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
         }
     }
 }

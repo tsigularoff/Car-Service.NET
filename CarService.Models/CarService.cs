@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-namespace CarService.Models
+﻿namespace CarService.Models
 {
+    using System.Collections.Generic;
+
     public class CarService
     {
         public CarService()

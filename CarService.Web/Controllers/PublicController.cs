@@ -1,6 +1,7 @@
 ﻿namespace CarService.Web.Controllers
 {    
     using System.Web.Mvc;
+    using System.Linq;
 
     using AutoMapper.QueryableExtensions;
     using Kendo.Mvc.UI;
@@ -29,6 +30,26 @@
         public ActionResult ServiceCenters()
         {
             return View();
+        }
+
+        public ActionResult ServiceCenterDetails(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("ServiceCenters", "Public");
+            }
+
+            var serviceCenter = this.data.CarServiceCenters
+                .All()
+                .Project().To<ServiceCenterViewModel>()
+                .FirstOrDefault(x => x.Id == id);
+
+            if (serviceCenter == null)
+            {
+                return RedirectToAction("ServiceCenters", "Public");
+            }
+
+            return View(serviceCenter);
         }
     }
 }

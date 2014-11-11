@@ -1,0 +1,33 @@
+﻿@using CarService.Web.Areas.User.Models
+@model CarServiceCenterViewModel
+
+<h2> @Model.Name </h2>
+
+<h3> Available Services </h3>
+
+@(Html.Kendo()
+        .Grid<CarServiceOutputViewModel>()
+        .Name("service-center-services")
+        .Columns(columns =>
+        {
+            columns.Bound(model => model.Name);
+            columns.Bound(model => model.CarModelFullName);
+            columns.Bound(model => model.CarModelYear);
+        })        
+        .Sortable()
+        .Pageable(p =>
+                p.PageSizes(true)
+                .Refresh(true))
+        .Filterable()
+        .DataSource(data => {
+            data.Ajax()                                
+                .PageSize(10)
+                .ServerOperation(true)
+                .Read("GetServiceCenterServices", "CarService", new { id = this.Request.QueryString.GetValues("id")[0]});
+        }))
+
+<h3>Address : @Model.StreetAddress</h3>
+
+@Html.ActionLink("Back to service centers", "ServiceCenters", "ServiceCenter", null, new { @class = "btn btn-info"})
+
+

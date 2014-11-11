@@ -1,8 +1,11 @@
 ﻿namespace CarService.Web.Areas.User.Models
 {
+    using CarService.Models;
+    using CarService.Web.Infrastucture.Mapping;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    public class CarServiceCenterViewModel
+    public class CarServiceCenterViewModel : IMapFrom<CarServiceCenter>
     {
         public int Id { get; set; }
 
@@ -19,5 +22,7 @@
         public string StreetAddress { get; set; }
 
         public string Location { get; set; }
+
+        public ICollection<CarServiceOutputViewModel> CarServices { get; set; }
     }
 }

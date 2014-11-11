@@ -444,13 +444,14 @@
     <Content Include="Areas\Administration\Views\Admin\Index.cshtml" />
     <Content Include="Areas\User\Views\web.config" />
     <Content Include="Areas\User\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\User\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\User\Views\ServiceCenter\Index.cshtml" />
     <Content Include="Areas\User\Views\ServiceCenter\AddCarService.cshtml" />
     <Content Include="Areas\User\Views\Shared\_DropDownCarModels.cshtml" />
     <Content Include="Areas\User\Views\Shared\_DropDownCarModelYears.cshtml" />
     <Content Include="Content\kendo\images\kendoui.ttf" />
     <Content Include="Content\kendo\images\kendoui.woff" />
+    <Content Include="Areas\User\Views\ServiceCenter\ServiceCenterDetails.cshtml" />
+    <Content Include="Areas\User\Views\ServiceCenter\ServiceCenters.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1104,13 +1105,12 @@
     <Content Include="Views\Shared\_ErrorMessage.cshtml" />
     <Content Include="Views\Shared\_SuccessMessage.cshtml" />
     <Content Include="Views\Templates\DisplayTemplates\StringHyperlink.cshtml" />
+    <Content Include="Views\Public\ServiceCenterDetails.cshtml" />
+    <Content Include="Views\Home\_LastServiceCenters.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Administration\Models\" />
-    <Folder Include="Areas\User\Views\CarService\" />
-    <Folder Include="Areas\User\Views\Cars\" />
-    <Folder Include="Areas\User\Views\Manufacturers\" />
     <Folder Include="Areas\User\Views\UserArea\" />
     <Folder Include="Imgs\logos\" />
     <Folder Include="Lib\" />
