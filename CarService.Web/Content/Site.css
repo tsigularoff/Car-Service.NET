@@ -24,14 +24,21 @@ textarea {
 }
 
 #homepage-jumbotron{
-    /*background-image : url('../Imgs/logos/index.jpg');
+    background-image : url('../Imgs/logos/index.jpg');
     background-repeat :no-repeat;    
     background-size :cover;
     color : #bdb4b4;
-    height : 300px;*/
+    height : 300px;
 }
 
 #list-car-models{
     height : 150px;
     overflow-y : auto;
+}
+
+.home-page-img{
+    /*width : 150px;
+    height : 150px;*/   
+    max-width : 100%;
+    max-height : 100%;
 }

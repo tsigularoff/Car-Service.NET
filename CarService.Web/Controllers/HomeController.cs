@@ -10,7 +10,7 @@
     
     public class HomeController : BaseController
     {
-        private const int ServiceCentersCount = 3;
+        private const int ServiceCentersCount = 4;
         public HomeController(ICarServiceData data)
             :base(data)
         {
@@ -43,7 +43,7 @@
             return View();
         }
 
-        [OutputCache(Duration = 200, VaryByParam = "none")]       
+        //[OutputCache(Duration = 30, VaryByParam = "none")]
         [ChildActionOnly]
         public ActionResult LastServiceCenters()
         {

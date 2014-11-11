@@ -2,7 +2,7 @@
 
 <h2>Add service center</h2>
 
-@using (Html.BeginForm("AddServiceCenter", "ServiceCenter", FormMethod.Post))
+@using (Html.BeginForm("AddServiceCenter", "ServiceCenter", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
@@ -24,6 +24,11 @@
                 @Html.EditorFor(x => x.StreetAddress)
                 @Html.ValidationMessageFor(x => x.StreetAddress, null, new { @class = "text-danger" })
             </div>
+        </div>
+
+        <div class="form-group">
+            <label for="service-center-image">Image</label>
+            <input id="service-center-image" type="file" name="image" />
         </div>
 
         <div class="form-group">

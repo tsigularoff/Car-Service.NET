@@ -1,22 +1,43 @@
 ﻿@using CarService.Web.Models
 @model IEnumerable<ServiceCenterViewModel>
 
-<h3>Last added service centers</h3>
+<div class="page-header">
+    <h2 id="navbar">Last added service centers</h2>
+</div>
+
 
 @foreach (var item in Model)
 {
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">@item.Name</h3>
             </div>
             <div class="panel-body">
-                @item.StreetAddress
+               
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a href="Public/ServiceCenterDetails/?id=@item.Id">
+                        <img src="@item.ImgUrl" class="home-page-img" />
+                    </a>
+                }
+                else
+                {
+                    <a href="User/ServiceCenter/ServiceCenterDetails/?id=@item.Id">
+                        <img src="@item.ImgUrl" class="home-page-img" />
+                    </a>
+                }                
+               
+                <div class="container">
+                    Address : @item.StreetAddress
+                </div>
+                
             </div>
         </div>
     </div>
    
 }
+
 
 
 

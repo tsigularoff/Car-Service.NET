@@ -7,7 +7,7 @@
 
     <ul class="nav navbar-nav navbar-right">
         <li>@Html.ActionLink("Service centers", "ServiceCenters", "ServiceCenter", new { area = "User" }, null)</li>
-        <li>@Html.ActionLink("Add Service Center", "Index", "ServiceCenter", new { area = "User" }, null)</li>        
+        <li>@Html.ActionLink("Add Service Center", "AddServiceCenter", "ServiceCenter", new { area = "User" }, null)</li>        
         <li>@Html.ActionLink("Add Car Service", "AddCarService", "ServiceCenter", new { area = "User" }, null)</li>
         <li>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })        

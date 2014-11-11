@@ -444,7 +444,7 @@
     <Content Include="Areas\Administration\Views\Admin\Index.cshtml" />
     <Content Include="Areas\User\Views\web.config" />
     <Content Include="Areas\User\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\User\Views\ServiceCenter\Index.cshtml" />
+    <Content Include="Areas\User\Views\ServiceCenter\AddServiceCenter.cshtml" />
     <Content Include="Areas\User\Views\ServiceCenter\AddCarService.cshtml" />
     <Content Include="Areas\User\Views\Shared\_DropDownCarModels.cshtml" />
     <Content Include="Areas\User\Views\Shared\_DropDownCarModelYears.cshtml" />
@@ -1113,6 +1113,7 @@
     <Folder Include="Areas\Administration\Models\" />
     <Folder Include="Areas\User\Views\UserArea\" />
     <Folder Include="Imgs\logos\" />
+    <Folder Include="Imgs\ServiceCenters\" />
     <Folder Include="Lib\" />
   </ItemGroup>
   <ItemGroup>

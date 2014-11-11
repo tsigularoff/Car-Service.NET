@@ -24,6 +24,8 @@
 
         public DateTime ModifiedOn { get; set; }
 
+        public string ImgUrl { get; set; }        
+
         public string OwnerId { get; set; }
 
         public virtual ApplicationUser Owner { get; set; }

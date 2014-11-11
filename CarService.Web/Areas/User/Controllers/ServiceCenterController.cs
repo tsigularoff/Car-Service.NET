@@ -13,12 +13,15 @@
     using CarService.Web.Areas.User.Models;
     using CarService.Models;
     using System;
+    using System.IO;
 
    
 
     public class ServiceCenterController : UserAreaController
     {
         private const string SuccessMessage = "Service center created!";
+        private const string ImagePath = "/Imgs/ServiceCenters";
+        private const string DefaulImagePath = "/Imgs/Logos/noimage.jpg";
 
         public ServiceCenterController(ICarServiceData data)
             : base(data)
@@ -33,6 +36,7 @@
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult AddServiceCenter(CarServiceCenterViewModel serviceCenterModel)
         {
             if (ModelState.IsValid)
@@ -48,12 +52,36 @@
                 this.data.CarServiceCenters.Add(serviceCenter);
                 this.data.SaveChanges();
 
+                var imageName = string.Format("service-center-{0}", serviceCenter.Id);
+
+                if (Request.Files["image"].ContentLength > 0)
+                {
+                    string extension = Path.GetExtension(Request.Files["image"].FileName);
+                    string imgServerPath = string.Format("{0}/{1}{2}", Server.MapPath(ImagePath), imageName, extension);
+                    if (System.IO.File.Exists(imgServerPath))
+                        System.IO.File.Delete(imgServerPath);
+
+                    Request.Files["image"].SaveAs(imgServerPath);
+                    serviceCenter.ImgUrl = string.Format("{0}/{1}{2}", ImagePath,imageName, extension);                    
+                }
+                else
+                {
+                    serviceCenter.ImgUrl = DefaulImagePath;
+                }
+                this.data.SaveChanges();
+
                 TempData["message"] = SuccessMessage;
                 TempData["serviceCenterName"] = serviceCenter.Name;
                 return RedirectToAction("AddCarService");
             }
 
             return View("Index", serviceCenterModel);
+        }
+
+        [HttpGet]
+        public ActionResult AddServiceCenter()
+        {
+            return View();
         }
 
         public ActionResult AddCarService()
