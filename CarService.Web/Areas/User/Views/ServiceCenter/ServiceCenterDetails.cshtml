@@ -1,11 +1,26 @@
 ﻿@using CarService.Web.Areas.User.Models
 @model CarServiceCenterViewModel
 
-<h2> @Model.Name </h2>
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <h3> @Model.Name </h3>
+        <p> Address : @Model.StreetAddress</p>
+    </div>
+    <div class="col-md-3">
+        <img src="@Model.ImgUrl" class="service-center-img" />
+    </div>
+
+    <div id="mapCanvas" class="col-md-3 pull-right">
+
+    </div>
+</div>
 
 <h3> Available Services </h3>
 
-@(Html.Kendo()
+<div class="row">
+    <div class="col-lg-8">
+        @(Html.Kendo()
         .Grid<CarServiceOutputViewModel>()
         .Name("service-center-services")
         .Columns(columns =>
@@ -13,21 +28,28 @@
             columns.Bound(model => model.Name);
             columns.Bound(model => model.CarModelFullName);
             columns.Bound(model => model.CarModelYear);
-        })        
+        })
         .Sortable()
         .Pageable(p =>
                 p.PageSizes(true)
                 .Refresh(true))
         .Filterable()
-        .DataSource(data => {
-            data.Ajax()                                
+        .DataSource(data =>
+        {
+            data.Ajax()
                 .PageSize(10)
                 .ServerOperation(true)
-                .Read("GetServiceCenterServices", "CarService", new { id = this.Request.QueryString.GetValues("id")[0]});
+                .Read("GetServiceCenterServices", "CarService", new { id = this.Request.QueryString.GetValues("id")[0] });
         }))
+    </div>
+</div>
 
-<h3>Address : @Model.StreetAddress</h3>
+<input type="text" id="lat" hidden="hidden" value="@Model.Location.Split(';')[0]" />
+<input type="text" id="lng" hidden="hidden" value="@Model.Location.Split(';')[1]" />
 
-@Html.ActionLink("Back to service centers", "ServiceCenters", "ServiceCenter", null, new { @class = "btn btn-info"})
 
+@Html.ActionLink("Back to service centers", "ServiceCenters", "ServiceCenter", null, new { @class = "btn btn-info" })
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+@Scripts.Render("~/bundles/markerevent");
 

@@ -25,5 +25,7 @@
         public string Location { get; set; }
 
         public double DistanceTo { get; set; }
+
+        public string ImgUrl { get; set; }
     }
 }

@@ -17,6 +17,9 @@ namespace CarService.Web
                 // "~/Scripts/kendo/kendo.timezones.min.js", // uncomment if using the Scheduler
            "~/Scripts/kendo/kendo.aspnetmvc.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/markerevent").Include(
+                        "~/Scripts/markerevent.js"));
+
             bundles.Add(new StyleBundle("~/Content/kendo/css").Include(
             "~/Content/kendo/kendo.common-bootstrap.min.css",
             "~/Content/kendo/kendo.bootstrap.min.css"));
@@ -35,7 +38,7 @@ namespace CarService.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));           
+                      "~/Content/site.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

@@ -452,6 +452,7 @@
     <Content Include="Content\kendo\images\kendoui.woff" />
     <Content Include="Areas\User\Views\ServiceCenter\ServiceCenterDetails.cshtml" />
     <Content Include="Areas\User\Views\ServiceCenter\ServiceCenters.cshtml" />
+    <Content Include="Scripts\markerevent.js" />
     <Content Include="Views\Shared\DisplayTemplates\StringHyperlink.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Currency.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
