@@ -3,17 +3,24 @@
 
 <br />
 <div class="row">
+   
     <div class="col-md-3">
-        <h3> @Model.Name </h3>
-        <p> Address : @Model.StreetAddress</p>
-    </div>
-    <div class="col-md-3">
-        <img src="@Model.ImgUrl" class="service-center-img" />
+        <div class="panel panel-default">
+            <div class="panel-heading"> <strong>@Model.Name</strong> </div>            
+            <div class="panel-body">
+                <p>Address: @Model.StreetAddress</p>
+                <img src="@Model.ImgUrl" class="service-center-img" />
+            </div>
+        </div>
     </div>
 
-    <div id="mapCanvas" class="col-md-3 pull-right">
-
+    <div class="col-md-3 pull-right">
+        <div id="mapCanvas"></div>
+        <br/>
+        @Html.ActionLink("Back to service centers", "ServiceCenters", "ServiceCenter", null, new { @class = "btn btn-info" })
     </div>
+   
+   
 </div>
 
 <h3> Available Services </h3>
@@ -46,9 +53,6 @@
 
 <input type="text" id="lat" hidden="hidden" value="@Model.Location.Split(';')[0]" />
 <input type="text" id="lng" hidden="hidden" value="@Model.Location.Split(';')[1]" />
-
-
-@Html.ActionLink("Back to service centers", "ServiceCenters", "ServiceCenter", null, new { @class = "btn btn-info" })
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 @Scripts.Render("~/bundles/markerevent");

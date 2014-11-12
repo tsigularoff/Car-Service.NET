@@ -6,6 +6,7 @@
     using AutoMapper.QueryableExtensions;
     using Kendo.Mvc.UI;
     using Kendo.Mvc.Extensions;
+    using CarService.Web.Infrastucture;
 
     using CarService.Data;
     using CarService.Models;
@@ -93,18 +94,25 @@
         }
 
         public JsonResult GetServices([DataSourceRequest]DataSourceRequest request)
-        {
-            var services = this.data.CarServices
-                .All()
-                .Project().To<CarServiceOutputViewModel>();
-
+        {           
             // For the needs of Autocomplete
             if (request.Filters == null)
             {
+                var services = this.data.CarServices
+                    .All()
+                    .Project().To<CarServiceOutputViewModel>()
+                    .DistinctBy(x => x.Name);
+
                 return Json(services, JsonRequestBehavior.AllowGet);
             }
+            else
+            {
+                var services = this.data.CarServices
+               .All()
+               .Project().To<CarServiceOutputViewModel>();
 
-            return Json(services.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
+                return Json(services.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
+            }            
         }
 
         public JsonResult GetServiceCenterServices([DataSourceRequest]DataSourceRequest request, int id)
