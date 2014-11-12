@@ -8,10 +8,12 @@
     <ul class="nav navbar-nav navbar-right">
         <li>@Html.ActionLink("Service centers", "ServiceCenters", "ServiceCenter", new { area = "User" }, null)</li>
         <li>@Html.ActionLink("Add Service Center", "AddServiceCenter", "ServiceCenter", new { area = "User" }, null)</li>        
-        <li>@Html.ActionLink("Add Car Service", "AddCarService", "ServiceCenter", new { area = "User" }, null)</li>
+        <li>@Html.ActionLink("Add Car Service", "AddCarService", "CarService", new { area = "User" }, null)</li>
+        <li>@Html.ActionLink("Search Car Service", "SearchService", "CarService", new { area = "User" }, null) </li>
         <li>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })        
-        </li>       
+        </li> 
+              
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>            
     </ul>
     }

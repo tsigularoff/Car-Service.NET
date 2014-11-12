@@ -1,0 +1,32 @@
+﻿@using CarService.Web.Areas.User.Models
+
+<h2>SearchCarService</h2>
+
+@(Html.Kendo().Grid<CarServiceOutputViewModel>()
+                .Name("search-service-grid")
+                .Columns(cols =>
+                {
+                    cols.Bound(m => m.Name);
+                    cols.Bound(m => m.Manufacturer);
+                    cols.Bound(m => m.CarModelName);
+                    cols.Bound(m => m.CarModelYear);                    
+                    cols.Template(@<text></text>)
+                        .ClientTemplate("<a href='" + Url.Action("ServiceDetails", "CarService") + "/?id=#=Id#'>Service Details</a>");
+                })
+                    .Pageable(p =>
+                    p.PageSizes(true)
+                    .Refresh(true)
+                )
+                .Sortable()
+                .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+                .DataSource(data =>
+                {
+                    data.Ajax()
+                        .PageSize(10)
+                        .ServerOperation(true)
+                        .Read("GetServices", "CarService");
+                }))
+
+
+
+

@@ -24,16 +24,34 @@
                 @Html.EditorFor(x => x.StreetAddress)
                 @Html.ValidationMessageFor(x => x.StreetAddress, null, new { @class = "text-danger" })
             </div>
-        </div>
+        </div>        
 
         <div class="form-group">
-            <label for="service-center-image">Image</label>
-            <input id="service-center-image" type="file" name="image" />
+            <label for="service-center-image" class="control-label col-md-2">Image</label>
+            <div class="col-md-6">                
+                <div class="hidden">
+                    <input id="select-image-input" type="file" name="image" hidden="hidden" />
+                </div> 
+                <input id="fake-upload-btn" class="btn btn-primary" type="button" value="Select image" />
+            </div>
+        </div>
+
+        <input type="text" hidden="hidden" id="location" name="location" />
+
+        <div class="form-group">
+            <div class="col-md-4">
+                <span id="location-msg">Acquiring location...</span>
+                <div class="progress progress-striped active">
+                    <div id="location-progress" class="progress-bar" style="width: 50%"></div>
+                </div>
+            </div>            
+            
         </div>
 
         <div class="form-group">
             <input type="submit" value="Add Service Center" class="btn btn-info" />
         </div>
+       
     </div>
 }
 
@@ -44,3 +62,25 @@
     @Scripts.Render("~/bundles/jqueryval");
 }
 
+<script>
+    $('#fake-upload-btn').on('click', function () {
+        $("#select-image-input").click();
+    })
+
+    navigator.geolocation.getCurrentPosition(function (position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+                
+        var location = lat + ';' + lon;
+        
+        $('#location').val(location);
+
+        setProgressBarState();
+    })
+
+    function setProgressBarState() {
+        $('#location-msg').text('Location acquired!');
+        $('#location-progress').css('width', '100%');
+    }
+
+</script>

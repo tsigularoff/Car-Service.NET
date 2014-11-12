@@ -1,9 +1,12 @@
 ﻿namespace CarService.Web.Areas.User.Controllers
 {
+    using System;
+    using System.IO;
     using System.Web.Mvc;
     using System.Linq;
     using System.Collections.Generic;
 
+    using AutoMapper;
     using AutoMapper.QueryableExtensions;
     using Kendo.Mvc.UI;
     using Kendo.Mvc.Extensions;
@@ -12,10 +15,6 @@
     using CarService.Data;
     using CarService.Web.Areas.User.Models;
     using CarService.Models;
-    using System;
-    using System.IO;
-
-   
 
     public class ServiceCenterController : UserAreaController
     {
@@ -41,13 +40,12 @@
         {
             if (ModelState.IsValid)
             {
-                var serviceCenter = new CarServiceCenter
-                {
-                    Name = serviceCenterModel.Name,
-                    StreetAddress = serviceCenterModel.StreetAddress,
-                    CreatedOn = DateTime.Now,
-                    ModifiedOn = DateTime.Now
-                };
+                var serviceCenter = new CarServiceCenter();
+               
+                Mapper.Map(serviceCenterModel, serviceCenter);
+
+                serviceCenter.CreatedOn = DateTime.Now;
+                serviceCenter.ModifiedOn = DateTime.Now;
 
                 this.data.CarServiceCenters.Add(serviceCenter);
                 this.data.SaveChanges();
@@ -72,7 +70,7 @@
 
                 TempData["message"] = SuccessMessage;
                 TempData["serviceCenterName"] = serviceCenter.Name;
-                return RedirectToAction("AddCarService");
+                return RedirectToAction("AddCarService", "CarService");
             }
 
             return View("Index", serviceCenterModel);
@@ -82,17 +80,7 @@
         public ActionResult AddServiceCenter()
         {
             return View();
-        }
-
-        public ActionResult AddCarService()
-        {
-            var manufacturers = this.data.Manufacturers
-                .All()
-                .OrderBy(x => x.Name)
-                .Project().To<ManufacturerViewModel>();
-
-            return View(manufacturers);
-        }
+        }        
 
         public ActionResult ServiceCenters()
         {

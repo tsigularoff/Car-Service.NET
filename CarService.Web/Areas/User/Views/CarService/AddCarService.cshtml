@@ -60,8 +60,24 @@
         @Html.ValidationSummary(true)
 
     <div class="form-group">
-        <label for="form-service-name">Service name</label>
-        <input id="form-service-name" name="Name" class="form-control" placeholder="Enter service" />
+        @*<label for="form-service-name">Service name</label>
+        <input id="form-service-name" name="Name" class="form-control" placeholder="Enter service" />*@
+
+        @(Html.Kendo()
+                .AutoComplete()
+                .Name("name")
+                .Filter(FilterType.Contains)
+                .MinLength(3)
+                 .DataTextField("Name")
+                .DataSource( data=>
+                            {
+                                data.Read(r =>
+                                {
+                                    r.Action("GetServices", "CarService");
+                                })
+                                .ServerFiltering(true);                                                                
+                            }
+                ))
     </div>        
         <input id="form-car-model-name" name="CarModelName" hidden="hidden" />
         <input id="form-year" name="Year" hidden="hidden" />

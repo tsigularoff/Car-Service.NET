@@ -12,18 +12,22 @@
     using CarService.Web.Areas.User.Models;
     using CarService.Web.Controllers;
 
-
     public class CarServiceController : UserAreaController
     {
         public CarServiceController(ICarServiceData data)
             : base(data)
         {
-
         }
 
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult AddCarService()
         {
-            return View();
+            var manufacturers = this.data.Manufacturers
+                .All()
+                .OrderBy(x => x.Name)
+                .Project().To<ManufacturerViewModel>();
+
+            return View(manufacturers);
         }
 
         [HttpPost]
@@ -34,9 +38,10 @@
             {
                 TempData["errorMessage"] = "Car service length must be between 10 and 50 characters";
 
-                return RedirectToAction("AddCarService", "ServiceCenter");
+                return RedirectToAction("AddCarService", "CarService");
             }
 
+            var serviceName = carServiceModel.Name;
             var carModelName = carServiceModel.CarModelName;
             var year = carServiceModel.Year;
 
@@ -45,12 +50,19 @@
                 .FirstOrDefault(x => x.Name == carModelName && x.Year == year)
                 .Id;
 
-            var carService = new CarService
+            var carService = this.data.CarServices
+                .All()
+                .FirstOrDefault(x => (x.Name == serviceName) && (x.CarModelId == carModelId));
+            
+            if(carService == null)
             {
-                Name = carServiceModel.Name,
-                CarModelId = carModelId,
-                Price = carServiceModel.Price
-            };
+                carService = new CarService
+                {
+                    Name = carServiceModel.Name,
+                    CarModelId = carModelId,
+                    Price = carServiceModel.Price
+                };
+            }
 
             var serviceCenter = this.data.CarServiceCenters.Find(carServiceModel.ServiceCenterId);
 
@@ -59,30 +71,47 @@
 
             TempData["successMessage"] = "Service successfully added!";
 
-            return RedirectToAction("AddCarService", "ServiceCenter");
+            return RedirectToAction("AddCarService", "CarService");
         }
 
-        public JsonResult CarModelServices(string modelName, int year)
+        [HttpGet]
+        public ActionResult SearchService()
         {
-            var carModelId = this.data.CarModels
-                .All()
-                .FirstOrDefault(x => x.Name == modelName && x.Year == year)
-                .Id;
+            return View();
+        }       
 
-            var modelServices = this.data.CarServices
-                .All()
-                .Where(x => x.CarModelId == carModelId)
-                .Project().To<CarServiceOutputViewModel>()
-                .ToList();
+        public ActionResult ServiceDetails()
+        {
+            var serviceId = int.Parse(Request.QueryString.GetValues("id")[0]);
 
-            return Json(modelServices, JsonRequestBehavior.AllowGet);
+            var carService = this.data.CarServices
+                                    .All()
+                                    .Project().To<CarServiceOutputViewModel>()
+                                    .FirstOrDefault(x => x.Id == serviceId);
+
+            return View(carService);
+        }
+
+        public JsonResult GetServices([DataSourceRequest]DataSourceRequest request)
+        {
+            var services = this.data.CarServices
+                .All()
+                .Project().To<CarServiceOutputViewModel>();
+
+            // For the needs of Autocomplete
+            if (request.Filters == null)
+            {
+                return Json(services, JsonRequestBehavior.AllowGet);
+            }
+
+            return Json(services.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult GetServiceCenterServices([DataSourceRequest]DataSourceRequest request, int id)
         {
             var result = this.data.CarServiceCenters
                 .All()
-                .FirstOrDefault(x=> x.Id == id)
+                .FirstOrDefault(x => x.Id == id)
                 .CarServices
                 .AsQueryable()
                 .Project().To<CarServiceOutputViewModel>();

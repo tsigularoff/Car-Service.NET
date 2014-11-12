@@ -1,5 +1,6 @@
 ﻿namespace CarService.Web.Areas.User.Models
 {
+    using AutoMapper;
     using CarService.Models;
     using CarService.Web.Infrastucture.Mapping;
     using System.Collections.Generic;
@@ -23,6 +24,6 @@
 
         public string Location { get; set; }
 
-        public ICollection<CarServiceOutputViewModel> CarServices { get; set; }
+        public double DistanceTo { get; set; }
     }
 }
