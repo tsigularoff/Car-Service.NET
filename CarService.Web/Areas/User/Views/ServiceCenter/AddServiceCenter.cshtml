@@ -4,8 +4,7 @@
 
 @using (Html.BeginForm("AddServiceCenter", "ServiceCenter", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    @Html.AntiForgeryToken()
-
+    @Html.AntiForgeryToken()    
     <div class="form-horizontal">
         @Html.ValidationSummary(true)
         <div class="form-group">
@@ -54,8 +53,6 @@
        
     </div>
 }
-
-
 
 
 @section Scripts {

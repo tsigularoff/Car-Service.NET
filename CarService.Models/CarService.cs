@@ -1,6 +1,7 @@
 ﻿namespace CarService.Models
 {
-    using System.Collections.Generic;
+    using System;
+using System.Collections.Generic;
 
     public class CarService
     {
@@ -15,9 +16,13 @@
 
         public int CarModelId { get; set; }
 
-        public virtual CarModel CarModel { get; set; }
-
         public decimal Price { get; set; }
+
+        public DateTime CreatedOn { get; set; }
+
+        public DateTime ModifiedOn { get; set; }
+
+        public virtual CarModel CarModel { get; set; }        
 
         public virtual ICollection<CarServiceCenter> CarServiceCenters { get; set; }
     }

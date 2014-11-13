@@ -37,9 +37,7 @@
             columns.Bound(model => model.CarModelYear);
         })
         .Sortable()
-        .Pageable(p =>
-                p.PageSizes(true)
-                .Refresh(true))
+        .Pageable(p => p.PageSizes(true).Refresh(true))                
         .Filterable()
         .DataSource(data =>
         {

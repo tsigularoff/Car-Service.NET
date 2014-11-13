@@ -1,0 +1,18 @@
+﻿@using CarService.Web.Areas.Administration.ViewModels
+@model CarServiceCenterViewModel
+
+<h3>Customized Person edit template</h3>
+<br />
+    @Html.HiddenFor(model => model.Name)
+<div>
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+
+    @Html.LabelFor(model => model.StreetAddress)
+    @Html.EditorFor(model => model.StreetAddress)
+
+
+
+
+    <input type="file" name="file"/>
+</div>

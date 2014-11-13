@@ -49,7 +49,5 @@
 
             return manufacturers.Values;
         }
-
-       
     }
 }
