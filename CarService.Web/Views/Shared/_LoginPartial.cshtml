@@ -6,6 +6,10 @@
     @Html.AntiForgeryToken()
 
     <ul class="nav navbar-nav navbar-right">
+        @if (User.IsInRole("Admin"))
+        {
+            <li>@Html.ActionLink("Admin Panel", "Index", "ServiceCenters", new { area = "Administration" }, null)</li>
+        }        
         <li>@Html.ActionLink("Service centers", "ServiceCenters", "ServiceCenter", new { area = "User" }, null)</li>
         <li>@Html.ActionLink("Add Service Center", "AddServiceCenter", "ServiceCenter", new { area = "User" }, null)</li>        
         <li>@Html.ActionLink("Add Car Service", "AddCarService", "CarService", new { area = "User" }, null)</li>

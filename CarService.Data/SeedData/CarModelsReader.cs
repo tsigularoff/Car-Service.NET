@@ -33,6 +33,8 @@
                         manufacturers.Add(manufacturerName, new Manufacturer
                         {
                             Name = manufacturerName,
+                            CreatedOn = DateTime.Now,
+                            ModifiedOn = DateTime.Now
                         });
                     }
 
@@ -40,7 +42,9 @@
                             new CarModel
                             {
                                 Name = modelName,
-                                Year = modelYear
+                                Year = modelYear,
+                                CreatedOn = DateTime.Now,
+                                ModifiedOn = DateTime.Now
                             });
 
                     line = reader.ReadLine();
