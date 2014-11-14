@@ -13,11 +13,13 @@
         [Display(Name = "Service Center Name")]
         [Required(ErrorMessage="Name is required")]
         [StringLength(30, MinimumLength=3, ErrorMessage="Name length must be between 3 and 30 characters")]
+        [RegularExpression("[\\sa-zA-Z0-9\\.]+", ErrorMessage = "Allowed characters : 'a-z', 'A-Z', '0-9', '.'")]
         public string Name { get; set; }
 
         [Display(Name = "Street Address")]
         [Required(ErrorMessage = "Street address is required")]
-        [StringLength(40, MinimumLength=10, ErrorMessage = "Street address can be no longer than 40 characters")]                
+        [StringLength(40, MinimumLength=10, ErrorMessage = "Street address can be no longer than 40 characters")]
+        [RegularExpression("[\\sa-zA-Z0-9\\.]+", ErrorMessage = "Allowed characters : 'a-z', 'A-Z', '0-9', '.'")]    
         public string StreetAddress { get; set; }
 
         public string Location { get; set; }

@@ -16,11 +16,6 @@
 
         }
 
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         public JsonResult GetManufacturers()
         {
             var manufacturers = this.data.Manufacturers

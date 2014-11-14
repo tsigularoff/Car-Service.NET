@@ -50,25 +50,9 @@
                 this.data.CarServiceCenters.Add(serviceCenter);
                 this.data.SaveChanges();
 
-                var imageName = string.Format("service-center-{0}", serviceCenter.Id);
+                SaveImage(serviceCenter);
 
-                if (Request.Files["image"].ContentLength > 0)
-                {
-                    string extension = Path.GetExtension(Request.Files["image"].FileName);
-                    string imgServerPath = string.Format("{0}/{1}{2}", Server.MapPath(ImagePath), imageName, extension);
-                    if (System.IO.File.Exists(imgServerPath))
-                        System.IO.File.Delete(imgServerPath);
-
-                    Request.Files["image"].SaveAs(imgServerPath);
-                    serviceCenter.ImgUrl = string.Format("{0}/{1}{2}", ImagePath,imageName, extension);                    
-                }
-                else
-                {
-                    serviceCenter.ImgUrl = DefaulImagePath;
-                }
-                this.data.SaveChanges();
-
-                TempData["message"] = SuccessMessage;
+                TempData["successMessage"] = SuccessMessage;
                 TempData["serviceCenterName"] = serviceCenter.Name;
                 return RedirectToAction("AddCarService", "CarService");
             }
@@ -121,6 +105,27 @@
                 .Project().To<CarServiceCenterViewModel>();
 
             return Json(result.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
+        }
+
+        private void SaveImage(CarServiceCenter serviceCenter)
+        {
+            var imageName = string.Format("service-center-{0}", serviceCenter.Id);
+
+            if (Request.Files["image"].ContentLength > 0)
+            {
+                string extension = Path.GetExtension(Request.Files["image"].FileName);
+                string imgServerPath = string.Format("{0}/{1}{2}", Server.MapPath(ImagePath), imageName, extension);
+                if (System.IO.File.Exists(imgServerPath))
+                    System.IO.File.Delete(imgServerPath);
+
+                Request.Files["image"].SaveAs(imgServerPath);
+                serviceCenter.ImgUrl = string.Format("{0}/{1}{2}", ImagePath, imageName, extension);
+            }
+            else
+            {
+                serviceCenter.ImgUrl = DefaulImagePath;
+            }
+            this.data.SaveChanges();
         }
     }
 }

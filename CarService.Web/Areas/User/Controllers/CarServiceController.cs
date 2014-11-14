@@ -31,9 +31,8 @@
         public ActionResult AddCarService(CarServiceInputViewModel carServiceModel)
         {
             if (!this.ModelState.IsValid)
-            {
-                TempData["errorMessage"] = "Car service length must be between 10 and 50 characters";
-
+            {                
+                TempData["errorMessage"] = this.ModelState.SerializeErrors().ToString();
                 return RedirectToAction("AddCarService", "CarService");
             }
 

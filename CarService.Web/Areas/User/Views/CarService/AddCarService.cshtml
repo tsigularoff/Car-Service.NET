@@ -15,7 +15,7 @@
     Add car services to
     @if (TempData["serviceCenterName"] != null)
     {
-        <span> @TempData["serviceCenterName"].ToString() </span>
+        <span> "@TempData["serviceCenterName"].ToString()" </span>
         <input id="selected-service-center" type="text" value='@TempData["serviceCenterName"].ToString()' style="display:none" />
     }
     else
@@ -25,30 +25,31 @@
 </h2>
 
 <div class="row">
-    <div class="well bs-component col-md-10">
-        <div id="car-selection" class="form-horizontal col-md-4">
-            <h3>Select car model</h3>
+    <div class="well col-md-11">
+        <div class="col-md-6">
+            <div id="car-selection" class="form-horizontal">
+                <h3>Select car model</h3>
 
-            <div id="manufacturers-cnt" class="form-group">
-                <label for="manufacturers">Manufacturer</label>
-                <select id="manufacturers" class="form-control"></select>
-            </div>
+                <div id="manufacturers-cnt" class="form-group">
+                    <label for="manufacturers" class="control-label col-md-3">Manufacturer</label>
+                    <select id="manufacturers" class="form-control"></select>
+                </div>
 
-            <div id="car-models-cnt" class="form-group">
-                <label for="car-models">Car model</label>
-                <select id="car-models" class="form-control"></select>
-            </div>
+                <div id="car-models-cnt" class="form-group">
+                    <label for="car-models" class="control-label col-md-3">Car model</label>
+                    <select id="car-models" class="form-control"></select>
+                </div>
 
-            <div id="car-model-years-cnt" class="form-group">
-                <label for="car-model-years">Year</label>
-                <select id="car-model-years" class="form-control"></select>
+                <div id="car-model-years-cnt" class="form-group">
+                    <label for="car-model-years" class="control-label col-md-3">Year</label>
+                    <select id="car-model-years" class="form-control"></select>
+                </div>
             </div>
         </div>
 
         <div class="col-md-6">
-            <h3>Select service center</h3>
-
             <div id="service-center-cnt" class="form-horizontal">
+                <h3>Select service center</h3>
                 <div class="form-group">
                     <label for="service-centers">Service center</label>
                     <select id="service-centers" class="form-control"></select>
@@ -89,6 +90,7 @@
             </div>
         </div>
     </div>
+    
 </div>
 
 @section Scripts {
@@ -124,7 +126,6 @@
             selectModelYear();
         })
     }
-
 
     function GetCarModels() {
         var manId = $('#manufacturers option:selected').attr('value');
@@ -169,6 +170,13 @@
     function GetServiceCenters() {
         $.getJSON(serviceCentersUrl, null, function (data) {
             bindDropDownListData(data, "#service-centers");
+
+            var selectedServiceCenter = $('#selected-service-center').val();
+
+            if (selectedServiceCenter) {
+                $("#service-centers").val(selectedServiceCenter);
+            }
+
             var serviceCenterId = $('#service-centers option:selected').attr('data-id');
 
             $('#form-service-center-id').attr('value', serviceCenterId);
