@@ -44,7 +44,5 @@
                        
             return this.Json(modelYears, JsonRequestBehavior.AllowGet);
         }
-
-       
     }
 }

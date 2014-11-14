@@ -8,7 +8,7 @@
     using Kendo.Mvc.Extensions;
 
     using CarService.Data;
-    using CarService.Web.Models;
+    using CarService.Web.ViewModels;
     
 
     public class PublicController : BaseController

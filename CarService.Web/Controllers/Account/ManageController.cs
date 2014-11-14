@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using CarService.Web.Models;
+using CarService.Web.ViewModels;
 using CarService.Models;
 using CarService.Web.Controllers.Account;
 

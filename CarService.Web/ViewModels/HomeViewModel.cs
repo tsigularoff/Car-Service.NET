@@ -1,6 +1,5 @@
-﻿namespace CarService.Web.Models
-{
-  
+﻿namespace CarService.Web.ViewModels
+{  
     public class HomeViewModel
     {
         public int ServiceCentersCount { get; set; }

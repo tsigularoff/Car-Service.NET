@@ -27,6 +27,7 @@
                 .All()
                 .OrderBy(x => x.Name)
                 .Project().To<ManufacturerViewModel>();
+         
 
             return Json(manufacturers, JsonRequestBehavior.AllowGet);
         }

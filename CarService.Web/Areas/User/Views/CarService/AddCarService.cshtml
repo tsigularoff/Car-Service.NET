@@ -1,4 +1,5 @@
-﻿@model IEnumerable<CarService.Web.Areas.User.Models.ManufacturerViewModel>
+﻿@using CarService.Web.Areas.User.Models
+@model CarServiceInputViewModel
 
 @if (@TempData["successMessage"] != null)
 {
@@ -23,77 +24,83 @@
     }
 </h2>
 
+<div class="row">
+    <div class="well bs-component col-md-10">
+        <div id="car-selection" class="form-horizontal col-md-4">
+            <h3>Select car model</h3>
 
-<div id="car-selection" class="form-horizontal">
-    <h3>Select car model</h3>
+            <div id="manufacturers-cnt" class="form-group">
+                <label for="manufacturers">Manufacturer</label>
+                <select id="manufacturers" class="form-control"></select>
+            </div>
 
-    <div id="manufacturers-cnt" class="form-group">
-        <label for="manufacturers">Manufacturer</label>
-        @Html.DropDownList("manufacturers", new SelectList(Model, "Id", "Name"), new { @class = "form-control" })       
-    </div>
+            <div id="car-models-cnt" class="form-group">
+                <label for="car-models">Car model</label>
+                <select id="car-models" class="form-control"></select>
+            </div>
 
-    <div id="car-models-cnt" class="form-group">
-        <label for="car-models">Car model</label>
-        <select id="car-models" class="form-control"></select>
-    </div>
+            <div id="car-model-years-cnt" class="form-group">
+                <label for="car-model-years">Year</label>
+                <select id="car-model-years" class="form-control"></select>
+            </div>
+        </div>
 
-    <div id="car-model-years-cnt" class="form-group">
-        <label for="car-model-years">Year</label>
-        <select id="car-model-years" class="form-control"></select>
-    </div>
-</div>
+        <div class="col-md-6">
+            <h3>Select service center</h3>
 
-<h3>Select service center</h3>
+            <div id="service-center-cnt" class="form-horizontal">
+                <div class="form-group">
+                    <label for="service-centers">Service center</label>
+                    <select id="service-centers" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                    @using (Html.BeginForm("AddCarService", "CarService", FormMethod.Post))
+                    {
+                        <h3>Enter service</h3>
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
 
-<div id="service-center-cnt" class="form-horizontal">
-    <div class="form-group">
-        <label for="service-centers">Service center</label>
-        <select id="service-centers" class="form-control"></select>
-    </div>
-</div>
-
-<div>
-
-    @using (Html.BeginForm("AddCarService", "CarService", FormMethod.Post, new  { @class = "form-horizontal" }))
-    {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary(true)
-
-    <div class="form-group">
-        @*<label for="form-service-name">Service name</label>
-        <input id="form-service-name" name="Name" class="form-control" placeholder="Enter service" />*@
-
-        @(Html.Kendo()
-                .AutoComplete()
-                .Name("name")
-                .Filter(FilterType.Contains)
-                .MinLength(3)
-                .DataTextField("Name")
-                .DataSource( data=>
+                        @(Html.Kendo()
+                            .AutoComplete()
+                            .Name("Name")
+                            .Filter(FilterType.Contains)
+                            .MinLength(3)
+                            .DataTextField("Name")
+                            .DataSource(data =>
                             {
                                 data.Read(r =>
                                 {
                                     r.Action("GetServices", "CarService");
                                 })
-                                .ServerFiltering(true);                                                                
+                                .ServerFiltering(true);
                             }
-                ))
-    </div>        
-        <input id="form-car-model-name" name="CarModelName" hidden="hidden" />
-        <input id="form-year" name="Year" hidden="hidden" />
-        <input id="form-service-center-id" name="ServiceCenterId" hidden="hidden">       
-        <input type="submit" value="Add service" class="btn btn-info" />
-        @Html.ActionLink("Back to home", "Index", "Home", new { area = "" }, new { @class = "btn btn-info" })
-    }
-       
+                        ))
+                        <br />
+                        @Html.ValidationMessageFor(x => x.Name, null, new { @class = "text-danger" })
+
+                        <input id="form-car-model-name" name="CarModelName" hidden="hidden" />
+                        <input id="form-year" name="Year" hidden="hidden" />
+                        <input id="form-service-center-id" name="ServiceCenterId" hidden="hidden">
+                        <br />
+                        <input type="submit" value="Add service" class="btn btn-info" />
+                        @Html.ActionLink("Back to home", "Index", "Home", new { area = "" }, new { @class = "btn btn-info" })
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-@*@Scripts.Render("~/bundles/jquery")*@
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval");
+}
 
 <script>
+    var manufacturersUrl = "http://localhost:3587/User/Manufacturers/GetManufacturers";
     var carModelsUrl = "http://localhost:3587/User/Cars/GetModelsByManufacturer";
     var carModelYearsUrl = "http://localhost:3587/User/Cars/GetModelYears";
     var serviceCentersUrl = "http://localhost:3587/User/ServiceCenter/GetServiceCenters";
+
 
     $("#manufacturers").change(GetCarModels);
 
@@ -103,11 +110,21 @@
 
     $("#car-model-years").change(selectModelYear);
 
+    GetManufacturers();
+
     GetServiceCenters();
 
-    GetCarModels();
+    function GetManufacturers() {
+        $.getJSON(manufacturersUrl, {}, function (data) {
+            $("#manufacturers").children().remove();
+            bindManufacturers(data, "#manufacturers");
 
-    selectModelYear();   
+            GetCarModels();
+
+            selectModelYear();
+        })
+    }
+
 
     function GetCarModels() {
         var manId = $('#manufacturers option:selected').attr('value');
@@ -128,7 +145,7 @@
         $.getJSON(carModelYearsUrl,
             {
                 modelName: modelName
-            }, function (data) {                
+            }, function (data) {
                 $("#car-model-years").children().remove();
                 bindDropDownListData(data, "#car-model-years");
                 selectModelYear();
@@ -142,11 +159,18 @@
         })
     }
 
+    function bindManufacturers(data, selector) {
+        $.each(data, function (i) {
+            var option = "<option value='" + data[i].Id + "'>" + data[i].Name + "</option>";
+            $(selector).append(option);
+        })
+    }
+
     function GetServiceCenters() {
         $.getJSON(serviceCentersUrl, null, function (data) {
             bindDropDownListData(data, "#service-centers");
             var serviceCenterId = $('#service-centers option:selected').attr('data-id');
-            
+
             $('#form-service-center-id').attr('value', serviceCenterId);
         });
     }

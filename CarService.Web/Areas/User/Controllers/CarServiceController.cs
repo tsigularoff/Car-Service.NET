@@ -20,16 +20,10 @@
             : base(data)
         {
         }
-
-        [HttpGet]
+                
         public ActionResult AddCarService()
         {
-            var manufacturers = this.data.Manufacturers
-                .All()
-                .OrderBy(x => x.Name)
-                .Project().To<ManufacturerViewModel>();
-
-            return View(manufacturers);
+            return View();
         }
 
         [HttpPost]

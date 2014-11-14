@@ -7,19 +7,17 @@
     using System.ComponentModel.DataAnnotations;
 
     public class CarServiceCenterViewModel : IMapFrom<CarServiceCenter>
-    {
+    {       
         public int Id { get; set; }
 
-        [Required(ErrorMessage="Name is required")]
-        [StringLength(30, ErrorMessage="Name can be no longer than 30 characters")]
-        [MinLength(3, ErrorMessage="Name can be no shorter than 3 characters")]
         [Display(Name = "Service Center Name")]
+        [Required(ErrorMessage="Name is required")]
+        [StringLength(30, MinimumLength=3, ErrorMessage="Name length must be between 3 and 30 characters")]
         public string Name { get; set; }
 
+        [Display(Name = "Street Address")]
         [Required(ErrorMessage = "Street address is required")]
-        [StringLength(40, ErrorMessage = "Street address can be no longer than 40 characters")]
-        [MinLength(10, ErrorMessage = "Street address can be no shorter than 10 characters")]   
-        [Display(Name="Street Address")]
+        [StringLength(40, MinimumLength=10, ErrorMessage = "Street address can be no longer than 40 characters")]                
         public string StreetAddress { get; set; }
 
         public string Location { get; set; }

@@ -1,19 +1,19 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using CarService.Web.Models;
-using CarService.Models;
-
-
-namespace CarService.Web.Controllers.Account
+﻿namespace CarService.Web.Controllers.Account
 {
+    using System;
+    using System.Globalization;
+    using System.Linq;
+    using System.Security.Claims;
+    using System.Threading.Tasks;
+    using System.Web;
+    using System.Web.Mvc;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.Owin.Security;
+
+    using CarService.Web.ViewModels;
+    using CarService.Models;
+
     [Authorize]
     public class AccountController : Controller
     {

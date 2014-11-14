@@ -4,7 +4,7 @@
     using System.Linq;
 
     using CarService.Data;
-    using CarService.Web.Models;
+    using CarService.Web.ViewModels;
 
     using AutoMapper.QueryableExtensions;
     
@@ -23,8 +23,7 @@
             var regUsersCount = this.data.Users.All().Count();
             var carServiceCount = this.data.CarServices.All().Count();
             var manufaturersCount = this.data.Manufacturers.All().Count();
-            var carModelsCount = this.data.CarModels.All().Count();                                           
-                                                
+            var carModelsCount = this.data.CarModels.All().Count();        
 
             var homeViewInfo = new HomeViewModel
             {
@@ -43,7 +42,7 @@
             return View();
         }
 
-        //[OutputCache(Duration = 30, VaryByParam = "none")]
+        [OutputCache(Duration = 10, VaryByParam = "none")]
         [ChildActionOnly]
         public ActionResult LastServiceCenters()
         {
