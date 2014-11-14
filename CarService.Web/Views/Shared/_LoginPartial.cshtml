@@ -4,28 +4,19 @@
     using (Html.BeginForm("LogOff", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
     @Html.AntiForgeryToken()
-
-    <ul class="nav navbar-nav navbar-right">
-        @if (User.IsInRole("Admin"))
-        {
-            <li>@Html.ActionLink("Admin Panel", "Index", "ServiceCenters", new { area = "Administration" }, null)</li>
-        }        
-        <li>@Html.ActionLink("Service centers", "ServiceCenters", "ServiceCenter", new { area = "User" }, null)</li>
-        <li>@Html.ActionLink("Add Service Center", "AddServiceCenter", "ServiceCenter", new { area = "User" }, null)</li>        
-        <li>@Html.ActionLink("Add Car Service", "AddCarService", "CarService", new { area = "User" }, null)</li>
-        <li>@Html.ActionLink("Search Car Service", "SearchService", "CarService", new { area = "User" }, null) </li>
+        
+    <ul class="nav">
         <li>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })        
-        </li> 
-              
+        </li>               
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>            
-    </ul>
+    </ul>   
     }
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav">
         <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-    </ul>
+    </ul>   
 }
