@@ -27,16 +27,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Car Service.NET", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            @if (User.IsInRole("Admin"))
-            {
-                @Html.ActionLink("Admin Panel", "Index", "ServiceCenters", new { area = "Administration" }, null)
-            }
+            @Html.ActionLink("Car Service.NET", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })            
         </div>
         @(Html.Kendo().Menu()
           .Name("Menu")
           .Items(items =>
           {
+              items.Add().Text("Administration")
+                  .Action("Index", "ServiceCenters", new { area = "Administration" })
+                  .Enabled(User.IsInRole("Admin"))
+                  .Visible(User.IsInRole("Admin"));
               items.Add().Text("Car Services").Items(childs =>
                   {
                       childs.Add().Action("AddCarService", "CarService", new { area = "User" }).Text("Add Car Service");
