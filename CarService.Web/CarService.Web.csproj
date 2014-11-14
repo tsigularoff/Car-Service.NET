@@ -182,8 +182,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Administration\AdministrationAreaRegistration.cs" />
     <Compile Include="Areas\Administration\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Administration\Controllers\CarModelsController.cs" />
+    <Compile Include="Areas\Administration\Controllers\CarServicesController.cs" />
     <Compile Include="Areas\Administration\Controllers\ServiceCentersController.cs" />
     <Compile Include="Areas\Administration\ViewModels\CarServiceCenterViewModel.cs" />
+    <Compile Include="Areas\Administration\ViewModels\CarServiceViewModel.cs" />
+    <Compile Include="Areas\Administration\ViewModels\CarViewModel.cs" />
+    <Compile Include="Areas\Administration\ViewModels\ManufacturerViewModel.cs" />
     <Compile Include="Areas\User\Controllers\CarsController.cs" />
     <Compile Include="Areas\User\Controllers\CarServiceController.cs" />
     <Compile Include="Areas\User\Controllers\ManufacturersController.cs" />
@@ -470,6 +475,8 @@
     <Content Include="Areas\User\Views\CarService\ServiceDetails.cshtml" />
     <Content Include="Areas\Administration\Views\ServiceCenters\Index.cshtml" />
     <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\CreateServiceCenter.cshtml" />
+    <Content Include="Areas\Administration\Views\CarModels\Index.cshtml" />
+    <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\CarModel.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

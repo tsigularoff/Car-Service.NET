@@ -7,11 +7,12 @@
 
     using CarService.Models;
     using System.Web.Mvc;
+    using System.Collections.Generic;
 
-    public class CarServiceCenterViewModel : IMapFrom<CarServiceCenter>
+    public class CarServiceCenterViewModel : IMapFrom<CarServiceCenter>, IHaveCustomMappings
     {
         [HiddenInput(DisplayValue = false)]
-        public int? Id { get; set; }
+        public int? ServiceCenterId { get; set; }
 
         [Required(ErrorMessage = "Name is required")]
         [StringLength(30, ErrorMessage = "Name can be no longer than 30 characters")]
@@ -32,5 +33,13 @@
         public DateTime ModifiedOn { get; set; }
                 
         public string ImgUrl { get; set; }
+
+        public ICollection<CarServiceViewModel> CarServices { get; set; }
+
+        public void CreateMappings(AutoMapper.IConfiguration configuration)
+        {
+            configuration.CreateMap<CarServiceCenter, CarServiceCenterViewModel>()
+                .ForMember(x => x.ServiceCenterId, opt => opt.MapFrom(x => x.Id));
+        }
     }
 }

@@ -1,0 +1,43 @@
+﻿@using CarService.Web.Areas.Administration.ViewModels
+
+<h2>Car models administration</h2>
+
+<div class="row">
+    <div class="col-lg-12">
+
+        @(Html.Kendo()
+                .Grid<CarViewModel>()
+                .Name("car-models")
+                .Columns(
+                    cols =>
+                    {
+                        cols.Bound(x => x.Id);
+                        cols.Bound(x => x.Name);
+                        cols.Bound(x => x.Manufacturer);
+                        cols.Bound(x => x.CreatedOn).Format("{0:dd.MM.yyyy}");
+                        cols.Bound(x => x.ModifiedOn).Format("{0:dd.MM.yyyy}");
+                        cols.Command(cmd =>
+                        {
+                            //cmd.Edit();
+                            //cmd.Destroy();
+                        });
+                    }
+                )
+                //.ToolBar(toolbar => toolbar.Create().Text("Add new service center"))
+                .DataSource(data =>
+                {
+                    data.Ajax()
+                        .PageSize(10)
+                        .ServerOperation(true)
+                        .Model(model => model.Id(m => m.Id))
+                        .Read("GetCarModels", "CarModels");
+                        //.Update("UpdateServiceCenter", "ServiceCenters")
+                        //.Destroy("DeleteServiceCenter", "ServiceCenters")
+                        //.Create("CreateServiceCenter", "ServiceCenters");
+                })
+                .Editable(x => x.Mode(GridEditMode.PopUp))
+                .Pageable(p => p.PageSizes(true).Refresh(true))
+                .Sortable())
+    </div>
+</div>
+

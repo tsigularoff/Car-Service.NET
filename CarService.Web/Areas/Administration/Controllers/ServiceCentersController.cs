@@ -41,7 +41,7 @@
             {
                 var serviceCenter = this.data.CarServiceCenters
                     .All()
-                    .FirstOrDefault(x => x.Id == serviceCenterModel.Id);
+                    .FirstOrDefault(x => x.Id == serviceCenterModel.ServiceCenterId);
 
                 Mapper.Map(serviceCenterModel, serviceCenter);
 
@@ -58,7 +58,7 @@
             {
                 var serviceCenter = this.data.CarServiceCenters
                     .All()
-                    .FirstOrDefault(x => x.Id == serviceCenterModel.Id);
+                    .FirstOrDefault(x => x.Id == serviceCenterModel.ServiceCenterId);
 
                 this.data.CarServiceCenters.Delete(serviceCenter);
                 

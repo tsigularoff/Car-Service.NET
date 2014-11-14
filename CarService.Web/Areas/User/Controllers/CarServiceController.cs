@@ -12,6 +12,7 @@
     using CarService.Models;
     using CarService.Web.Areas.User.Models;
     using CarService.Web.Controllers;
+    using System;
 
     public class CarServiceController : UserAreaController
     {
@@ -61,7 +62,9 @@
                 {
                     Name = carServiceModel.Name,
                     CarModelId = carModelId,
-                    Price = carServiceModel.Price
+                    Price = carServiceModel.Price,
+                    CreatedOn = DateTime.Now,
+                    ModifiedOn = DateTime.Now
                 };
             }
 
