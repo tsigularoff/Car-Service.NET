@@ -1,7 +1,7 @@
-﻿using System.Web.Mvc;
-
-namespace CarService.Web.Areas.User
+﻿namespace CarService.Web.Areas.User
 {
+    using System.Web.Mvc;
+
     public class UserAreaRegistration : AreaRegistration 
     {
         public override string AreaName 

@@ -60,6 +60,8 @@
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+
+        public string Location { get; set; }
     }
 
     public class RegisterViewModel

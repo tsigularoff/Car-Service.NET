@@ -200,6 +200,7 @@
     <Compile Include="Areas\User\Models\CarViewModel.cs" />
     <Compile Include="Areas\User\Models\ManufacturerViewModel.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
+    <Compile Include="Common\GeoPoint.cs" />
     <Compile Include="Controllers\Account\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\Account\ManageController.cs" />
@@ -457,6 +458,7 @@
     <Content Include="Content\kendo\images\kendoui.woff" />
     <Content Include="Areas\User\Views\ServiceCenter\ServiceCenterDetails.cshtml" />
     <Content Include="Areas\User\Views\ServiceCenter\ServiceCenters.cshtml" />
+    <Content Include="Scripts\distanceCalculation.js" />
     <Content Include="Scripts\markerevent.js" />
     <Content Include="Views\Shared\DisplayTemplates\StringHyperlink.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Currency.cshtml" />
@@ -978,7 +980,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -1130,9 +1134,9 @@
     <Content Include="Views\Shared\_SuccessMessage.cshtml" />
     <Content Include="Views\Public\ServiceCenterDetails.cshtml" />
     <Content Include="Views\Home\_LastServiceCenters.cshtml" />
+    <Content Include="Views\Shared\NoPageFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Areas\Administration\Views\Shared\" />
     <Folder Include="Imgs\logos\" />
     <Folder Include="Imgs\ServiceCenters\" />

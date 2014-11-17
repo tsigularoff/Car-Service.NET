@@ -1,0 +1,2302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+xmlns=""
+xmlns:gpxx = "http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1
+http://www.topografix.com/GPX/1/1/gpx.xsd
+http://www.garmin.com/xmlschemas/GpxExtensions/v3
+http://www8.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd"
+version="1.1"
+creator="fuelo">
+
+<metadata>
+	<name>Gasstations</name>
+	<desc>Gasstations in Bulgaria</desc>
+	<author>
+	    <name>Fuelo.net</name>
+    </author>
+	<link href="http://fuelo.net"><text>fuelo.net</text></link>
+	<time>2014-10-21T11:29:19+03:00</time>
+	<keywords>gasstations</keywords>
+	<bounds minlat="41.236022" minlon="22.360067" maxlat="44.214555" maxlon="28.60705" />
+</metadata>
+
+<wpt lat="43.300201" lon="27.226500">
+	<name>Shell 9012 Енево Север</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/293"><text>Shell 9012 Енево Север във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[km 366+300 (посока Варна-София)]]></StreetAddress>
+			<City>АМ Хемус</City>
+			<Country>България</Country>
+			<PostalCode>9919</PostalCode>
+		</Address>
+		<PhoneNumber>0885228803</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.661900" lon="23.379601">
+	<name>Shell 3022 София Средец</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/296"><text>Shell 3022 София Средец във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Цариградско шосе]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1750</PostalCode>
+		</Address>
+		<PhoneNumber>0888861824</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.705002" lon="27.234200">
+	<name>Shell 2004 Айтос</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/297"><text>Shell 2004 Айтос във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 6/E773]]></StreetAddress>
+			<City>Айтос</City>
+			<Country>България</Country>
+			<PostalCode>8500</PostalCode>
+		</Address>
+		<PhoneNumber>0898405021</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.714298" lon="23.327900">
+	<name>Shell 5003 София Надежда</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/298"><text>Shell 5003 София Надежда във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. 202-ра №4]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1220</PostalCode>
+		</Address>
+		<PhoneNumber>0885899665</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.219601" lon="27.883801">
+	<name>Shell 3010 Варна</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/300"><text>Shell 3010 Варна във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Академик Курчатов №1]]></StreetAddress>
+			<City>Варна</City>
+			<Country>България</Country>
+			<PostalCode>9000</PostalCode>
+		</Address>
+		<PhoneNumber>0885343138</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.919998" lon="23.811399">
+	<name>Shell 9006 Ботевград</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/301"><text>Shell 9006 Ботевград във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 17, km 2+825 дясно]]></StreetAddress>
+			<City>Ботевград</City>
+			<Country>България</Country>
+			<PostalCode>2140</PostalCode>
+		</Address>
+		<PhoneNumber>0885542293</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.611301" lon="23.075708">
+	<name>Shell 3003 Перник</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/302"><text>Shell 3003 Перник във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Юрий Гагарин]]></StreetAddress>
+			<City>Перник</City>
+			<Country>България</Country>
+			<PostalCode>2303</PostalCode>
+		</Address>
+		<PhoneNumber>0897797878</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.660000" lon="23.348000">
+	<name>Shell 3036 София Дианабад</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/303"><text>Shell 3036 София Дианабад във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Г. М. Димитров]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1172</PostalCode>
+		</Address>
+		<PhoneNumber>0893668890</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.966900" lon="25.550501">
+	<name>Shell 9700 Хасково Аида</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/305"><text>Shell 9700 Хасково Аида във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 8, км 298+400 (преди разклона за Хасково)]]></StreetAddress>
+			<City>Хасково</City>
+			<Country>България</Country>
+			<PostalCode>6300</PostalCode>
+		</Address>
+		<PhoneNumber>038661215</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.882797" lon="25.317329">
+	<name>Shell 3008 Габрово</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/306"><text>Shell 3008 Габрово във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Брянска 29А]]></StreetAddress>
+			<City>Габрово</City>
+			<Country>България</Country>
+			<PostalCode>5300</PostalCode>
+		</Address>
+		<PhoneNumber>066804418</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.108040" lon="26.265715">
+	<name>Shell 6010 Kьосевци Изток</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/307"><text>Shell 6010 Kьосевци Изток във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 4, km 191+420 дясно]]></StreetAddress>
+			<City>Кьосевци</City>
+			<Country>България</Country>
+			<PostalCode>7951</PostalCode>
+		</Address>
+		<PhoneNumber>0879986416</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.638802" lon="23.320801">
+	<name>Shell 2008 София Симеоново</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/308"><text>Shell 2008 София Симеоново във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[Околовръстен път, km 46+717]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1434</PostalCode>
+		</Address>
+		<PhoneNumber>0888246664</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.674099" lon="23.250401">
+	<name>Shell 5004 София Овча Купел</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/309"><text>Shell 5004 София Овча Купел във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Бойчо Бойчев 4]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1618</PostalCode>
+		</Address>
+		<PhoneNumber>0885201090</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.314999" lon="26.923000">
+	<name>Shell 6008 Шумен 7км</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/310"><text>Shell 6008 Шумен 7км във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 2, km 112+737 дясно]]></StreetAddress>
+			<City>Шумен</City>
+			<Country>България</Country>
+			<PostalCode>9700</PostalCode>
+		</Address>
+		<PhoneNumber>054800440</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.215599" lon="27.955500">
+	<name>Shell 3038 Варна Почивка</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/312"><text>Shell 3038 Варна Почивка във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Княз Борис №23]]></StreetAddress>
+			<City>Варна</City>
+			<Country>България</Country>
+			<PostalCode>9010</PostalCode>
+		</Address>
+		<PhoneNumber>0887511236</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.719002" lon="26.342300">
+	<name>Shell 6004 Капитан Андреево</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/313"><text>Shell 6004 Капитан Андреево във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ГКПП Капитан Андреево]]></StreetAddress>
+			<City>Капитан Андреево</City>
+			<Country>България</Country>
+			<PostalCode>6530</PostalCode>
+		</Address>
+		<PhoneNumber>0885769000</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.975101" lon="22.869101">
+	<name>Shell 3005 Видин</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/314"><text>Shell 3005 Видин във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Цар Александър II]]></StreetAddress>
+			<City>Видин</City>
+			<Country>България</Country>
+			<PostalCode>3700</PostalCode>
+		</Address>
+		<PhoneNumber>094600421</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.297001" lon="27.229099">
+	<name>Shell 9013 Енево Юг</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/315"><text>Shell 9013 Енево Юг във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[km 366+840 (посока София-Варна)]]></StreetAddress>
+			<City>АМ Хемус</City>
+			<Country>България</Country>
+			<PostalCode>9919</PostalCode>
+		</Address>
+		<PhoneNumber>0886293747</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.285099" lon="22.703300">
+	<name>Shell 2011 Кюстендил</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/316"><text>Shell 2011 Кюстендил във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Цар Освободител]]></StreetAddress>
+			<City>Кюстендил</City>
+			<Country>България</Country>
+			<PostalCode>2500</PostalCode>
+		</Address>
+		<PhoneNumber>0887243751</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.706299" lon="23.306000">
+	<name>Shell 5002 София Сливница</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/317"><text>Shell 5002 София Сливница във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Сливница]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1233</PostalCode>
+		</Address>
+		<PhoneNumber>0885204100</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.148399" lon="24.780300">
+	<name>Shell 3030 Мария Луиза</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/318"><text>Shell 3030 Мария Луиза във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Цариградско шосе №90А]]></StreetAddress>
+			<City>Пловдив</City>
+			<Country>България</Country>
+			<PostalCode>4023</PostalCode>
+		</Address>
+		<PhoneNumber>032625256</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.407101" lon="23.239100">
+	<name>Shell 2002 Монтана</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/320"><text>Shell 2002 Монтана във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Диана]]></StreetAddress>
+			<City>Монтана</City>
+			<Country>България</Country>
+			<PostalCode>3403</PostalCode>
+		</Address>
+		<PhoneNumber>096300446</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.201599" lon="27.903200">
+	<name>Shell 3016 Варна Одесос</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/321"><text>Shell 3016 Варна Одесос във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Девня №4]]></StreetAddress>
+			<City>Варна</City>
+			<Country>България</Country>
+			<PostalCode>9000</PostalCode>
+		</Address>
+		<PhoneNumber>0888204985</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.418644" lon="24.609140">
+	<name>Shell 3025 Плевен Център</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/322"><text>Shell 3025 Плевен Център във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[на кръговото]]></StreetAddress>
+			<City>Плевен</City>
+			<Country>България</Country>
+			<PostalCode>5809</PostalCode>
+		</Address>
+		<PhoneNumber>0879169087</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.709099" lon="23.368299">
+	<name>Shell 6012 София Герена</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/323"><text>Shell 6012 София Герена във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Владимир Вазов 15А]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1517</PostalCode>
+		</Address>
+		<PhoneNumber>0878951852</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.971500" lon="25.457100">
+	<name>Shell 9010 Дряново</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/326"><text>Shell 9010 Дряново във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[гл. път Габрово - Велико Търново]]></StreetAddress>
+			<City>Дряново</City>
+			<Country>България</Country>
+			<PostalCode>5370</PostalCode>
+		</Address>
+		<PhoneNumber>067674462</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.992901" lon="22.846300">
+	<name>Shell 2012 Калотина</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/329"><text>Shell 2012 Калотина във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[E80 кm 1]]></StreetAddress>
+			<City>Калотина</City>
+			<Country>България</Country>
+			<PostalCode>2212</PostalCode>
+		</Address>
+		<PhoneNumber>0884797557</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.227600" lon="27.878500">
+	<name>Shell 3032 Варна Република</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/330"><text>Shell 3032 Варна Република във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Сливница и бул. Република]]></StreetAddress>
+			<City>Варна</City>
+			<Country>България</Country>
+			<PostalCode>9000</PostalCode>
+		</Address>
+		<PhoneNumber>0889322268</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.719002" lon="23.253700">
+	<name>Shell 3028 София Люлин Център</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/331"><text>Shell 3028 София Люлин Център във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ж.к. Люлин]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1336</PostalCode>
+		</Address>
+		<PhoneNumber>0899996764</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.265099" lon="24.308001">
+	<name>Shell 4001 Пазарджик Север</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/333"><text>Shell 4001 Пазарджик Север във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[посока Бургас-София, km 89+400]]></StreetAddress>
+			<City>АМ Тракия</City>
+			<Country>България</Country>
+			<PostalCode>4444</PostalCode>
+		</Address>
+		<PhoneNumber>0888722444</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.153797" lon="24.763821">
+	<name>Shell 3013 Пловдив Марица</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/334"><text>Shell 3013 Пловдив Марица във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. 6-ти Септември (бул. Източен)]]></StreetAddress>
+			<City>Пловдив</City>
+			<Country>България</Country>
+			<PostalCode>4000</PostalCode>
+		</Address>
+		<PhoneNumber>032620533</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.917000" lon="25.561199">
+	<name>Shell 2006 Хасково</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/335"><text>Shell 2006 Хасково във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Освобождения №108]]></StreetAddress>
+			<City>Хасково</City>
+			<Country>България</Country>
+			<PostalCode>6302</PostalCode>
+		</Address>
+		<PhoneNumber>0876999263</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.455898" lon="26.529200">
+	<name>Shell 9008 Ямбол Тунджа</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/336"><text>Shell 9008 Ямбол Тунджа във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[до централни ямболски гробища]]></StreetAddress>
+			<City>Ямбол</City>
+			<Country>България</Country>
+			<PostalCode>8600</PostalCode>
+		</Address>
+		<PhoneNumber>0899996741</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.618599" lon="25.405399">
+	<name>Shell 3021 Казанлък</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/337"><text>Shell 3021 Казанлък във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Княз Александър Батенберг №40]]></StreetAddress>
+			<City>Казанлък</City>
+			<Country>България</Country>
+			<PostalCode>6102</PostalCode>
+		</Address>
+		<PhoneNumber>0888226296</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.733002" lon="23.251699">
+	<name>Shell 2009 София Европа</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/338"><text>Shell 2009 София Европа във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Европа №138]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1366</PostalCode>
+		</Address>
+		<PhoneNumber>0889264266</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.928299" lon="24.239401">
+	<name>Shell 9001 Тетевен</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/339"><text>Shell 9001 Тетевен във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Вършец №67]]></StreetAddress>
+			<City>Тетевен</City>
+			<Country>България</Country>
+			<PostalCode>5700</PostalCode>
+		</Address>
+		<PhoneNumber>0878105431</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.943401" lon="25.560801">
+	<name>Shell 6003 Хасково Орфей</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/340"><text>Shell 6003 Хасково Орфей във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Васил Левски и ул. Ком]]></StreetAddress>
+			<City>Хасково</City>
+			<Country>България</Country>
+			<PostalCode>6303</PostalCode>
+		</Address>
+		<PhoneNumber>0876999265</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="44.108898" lon="27.265900">
+	<name>Shell 1009 Силистра</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/341"><text>Shell 1009 Силистра във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Петър Бояджиев №15Б]]></StreetAddress>
+			<City>Силистра</City>
+			<Country>България</Country>
+			<PostalCode>7500</PostalCode>
+		</Address>
+		<PhoneNumber>0887671148</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.272701" lon="26.925301">
+	<name>Shell 3024 Шумен Център</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/342"><text>Shell 3024 Шумен Център във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Симеон Велики №65]]></StreetAddress>
+			<City>Шумен</City>
+			<Country>България</Country>
+			<PostalCode>9700</PostalCode>
+		</Address>
+		<PhoneNumber>054800051</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.198700" lon="24.638100">
+	<name>Shell 6005 Тракия Север</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/343"><text>Shell 6005 Тракия Север във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[посока Бургас-София, km 118+414]]></StreetAddress>
+			<City>АМ Тракия</City>
+			<Country>България</Country>
+			<PostalCode>4202</PostalCode>
+		</Address>
+		<PhoneNumber>0884331795</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.514999" lon="27.469999">
+	<name>Shell 3034 Бургас Зорница</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/345"><text>Shell 3034 Бургас Зорница във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Димитър Димов]]></StreetAddress>
+			<City>Бургас</City>
+			<Country>България</Country>
+			<PostalCode>8000</PostalCode>
+		</Address>
+		<PhoneNumber>0899996757</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.704201" lon="23.009001">
+	<name>Shell 9009 Дреновец</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/348"><text>Shell 9009 Дреновец във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 112, km 8+450 дясно]]></StreetAddress>
+			<City>Дреновец</City>
+			<Country>България</Country>
+			<PostalCode>3920</PostalCode>
+		</Address>
+		<PhoneNumber>093232263</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.391159" lon="23.359509">
+	<name>Shell 2010 Кулата</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/349"><text>Shell 2010 Кулата във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[на път Е79]]></StreetAddress>
+			<City>Кулата</City>
+			<Country>България</Country>
+			<PostalCode>2868</PostalCode>
+		</Address>
+		<PhoneNumber>0887606941</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.008099" lon="23.075701">
+	<name>Shell 2005 Благоевград</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/351"><text>Shell 2005 Благоевград във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[на път Е79]]></StreetAddress>
+			<City>Благоевград</City>
+			<Country>България</Country>
+			<PostalCode>2700</PostalCode>
+		</Address>
+		<PhoneNumber>0885527754</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.647900" lon="23.375900">
+	<name>Shell 3020 София Младост</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/352"><text>Shell 3020 София Младост във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Александър Малинов]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1799</PostalCode>
+		</Address>
+		<PhoneNumber>0888499420</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.274868" lon="26.944469">
+	<name>Shell 6011 Шумен Стадион</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/353"><text>Shell 6011 Шумен Стадион във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Симеон Велики]]></StreetAddress>
+			<City>Шумен</City>
+			<Country>България</Country>
+			<PostalCode>9700</PostalCode>
+		</Address>
+		<PhoneNumber>054885124</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.908298" lon="23.879900">
+	<name>Shell 4003 Правец</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/354"><text>Shell 4003 Правец във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[km 43+790 ляво]]></StreetAddress>
+			<City>АМ Хемус</City>
+			<Country>България</Country>
+			<PostalCode>2161</PostalCode>
+		</Address>
+		<PhoneNumber>0878105428</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.701954" lon="24.185940">
+	<name>Shell 1015 Пирдоп</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/355"><text>Shell 1015 Пирдоп във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Цар Освободител №2]]></StreetAddress>
+			<City>Пирдоп</City>
+			<Country>България</Country>
+			<PostalCode>2070</PostalCode>
+		</Address>
+		<PhoneNumber>0884157528</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.638302" lon="26.301600">
+	<name>Shell 3002 Сливен</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/356"><text>Shell 3002 Сливен във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Новозагорско шосе №37]]></StreetAddress>
+			<City>Сливен</City>
+			<Country>България</Country>
+			<PostalCode>8800</PostalCode>
+		</Address>
+		<PhoneNumber>0884842282</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.064201" lon="24.139400">
+	<name>Shell 2003 Ябланица</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/360"><text>Shell 2003 Ябланица във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 3, км 157+100 ляво]]></StreetAddress>
+			<City>Ябланица</City>
+			<Country>България</Country>
+			<PostalCode>5750</PostalCode>
+		</Address>
+		<PhoneNumber>0878105407</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.416000" lon="25.601200">
+	<name>Shell 3009 Стара Загора</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/361"><text>Shell 3009 Стара Загора във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Цар Симеон Велики (кв. Железник)]]></StreetAddress>
+			<City>Стара Загора</City>
+			<Country>България</Country>
+			<PostalCode>6000</PostalCode>
+		</Address>
+		<PhoneNumber>0886720724</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.264198" lon="24.308201">
+	<name>Shell 4002 Пазарджик Юг</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/362"><text>Shell 4002 Пазарджик Юг във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[посока София-Бургас, km 89+400]]></StreetAddress>
+			<City>АМ Тракия</City>
+			<Country>България</Country>
+			<PostalCode>4444</PostalCode>
+		</Address>
+		<PhoneNumber>0899996754</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.677399" lon="23.297300">
+	<name>Shell 3035 София Белите Брези</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/363"><text>Shell 3035 София Белите Брези във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. България]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1680</PostalCode>
+		</Address>
+		<PhoneNumber>0892684688</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.669300" lon="23.392500">
+	<name>Shell 3033 София Дружба</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/364"><text>Shell 3033 София Дружба във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Брюксел]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1592</PostalCode>
+		</Address>
+		<PhoneNumber>0889355360</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.693901" lon="23.293400">
+	<name>Shell 3037 София Възкресение</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/365"><text>Shell 3037 София Възкресение във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Възкресение №1]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1330</PostalCode>
+		</Address>
+		<PhoneNumber>0898773535</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.502701" lon="26.021200">
+	<name>Shell 1025 Нова Загора</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/366"><text>Shell 1025 Нова Загора във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Сливенско шосе]]></StreetAddress>
+			<City>Нова Загора</City>
+			<Country>България</Country>
+			<PostalCode>8900</PostalCode>
+		</Address>
+		<PhoneNumber>0885128388</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.940628" lon="26.199982">
+	<name>Shell 1021 Сливо Поле</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/368"><text>Shell 1021 Сливо Поле във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. България №2Б]]></StreetAddress>
+			<City>Сливо Поле</City>
+			<Country>България</Country>
+			<PostalCode>7060</PostalCode>
+		</Address>
+		<PhoneNumber>0899931691</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.489407" lon="26.499926">
+	<name>Shell 3012 Ямбол</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/369"><text>Shell 3012 Ямбол във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Димитър Благоев №16]]></StreetAddress>
+			<City>Ямбол</City>
+			<Country>България</Country>
+			<PostalCode>8600</PostalCode>
+		</Address>
+		<PhoneNumber>0899996741</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.650501" lon="23.289801">
+	<name>Shell 3007 София Бояна</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/370"><text>Shell 3007 София Бояна във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[околовръстно шосе, km 49+650]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1616</PostalCode>
+		</Address>
+		<PhoneNumber>0884963014</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.610001" lon="23.106300">
+	<name>Shell 9003 Перник Струма</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/371"><text>Shell 9003 Перник Струма във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Юрий Гагарин ]]></StreetAddress>
+			<City>Перник</City>
+			<Country>България</Country>
+			<PostalCode>2300</PostalCode>
+		</Address>
+		<PhoneNumber>0897797878</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.609638" lon="23.223675">
+	<name>Shell 9002 Плоски</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/373"><text>Shell 9002 Плоски във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[km 414 ляво]]></StreetAddress>
+			<City>път E79</City>
+			<Country>България</Country>
+			<PostalCode>2810</PostalCode>
+		</Address>
+		<PhoneNumber>0887960232</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.478901" lon="27.439100">
+	<name>Shell 3014 Бургас Акации</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/374"><text>Shell 3014 Бургас Акации във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Чаталджа №16]]></StreetAddress>
+			<City>Бургас</City>
+			<Country>България</Country>
+			<PostalCode>8000</PostalCode>
+		</Address>
+		<PhoneNumber>0899996752</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.108044" lon="26.265116">
+	<name>Shell 6009 Кьосевци Запад</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/375"><text>Shell 6009 Кьосевци Запад във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 4, km 191+420 ляво]]></StreetAddress>
+			<City>Кьосевци</City>
+			<Country>България</Country>
+			<PostalCode>7951</PostalCode>
+		</Address>
+		<PhoneNumber>0879986415</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.714298" lon="23.276300">
+	<name>Shell 3006 София Люлин</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/376"><text>Shell 3006 София Люлин във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Петър Дертлиев]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1335</PostalCode>
+		</Address>
+		<PhoneNumber>0885204110</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.571701" lon="27.814301">
+	<name>Shell 3011 Добрич</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/379"><text>Shell 3011 Добрич във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Хан Тервел №92]]></StreetAddress>
+			<City>Добрич</City>
+			<Country>България</Country>
+			<PostalCode>9300</PostalCode>
+		</Address>
+		<PhoneNumber>0887100535</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.403870" lon="24.640955">
+	<name>Shell 6013 Плевен Дружба</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/380"><text>Shell 6013 Плевен Дружба във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ж.к. Дружба]]></StreetAddress>
+			<City>Плевен</City>
+			<Country>България</Country>
+			<PostalCode>5806</PostalCode>
+		</Address>
+		<PhoneNumber>0879169085</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.369400" lon="24.352699">
+	<name>Shell 6001 Горни Дъбник</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/381"><text>Shell 6001 Горни Дъбник във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 3, km 112+340 ляво]]></StreetAddress>
+			<City>Горни Дъбник</City>
+			<Country>България</Country>
+			<PostalCode>5880</PostalCode>
+		</Address>
+		<PhoneNumber>0879169086</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.702499" lon="23.350599">
+	<name>Shell 3026 София Владимир Вазов</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/382"><text>Shell 3026 София Владимир Вазов във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Владимир Вазов]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1510</PostalCode>
+		</Address>
+		<PhoneNumber>0893668890</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.602501" lon="23.145599">
+	<name>Shell 2001 Драгичево</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/383"><text>Shell 2001 Драгичево във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[на път E79]]></StreetAddress>
+			<City>Драгичево</City>
+			<Country>България</Country>
+			<PostalCode>2351</PostalCode>
+		</Address>
+		<PhoneNumber>0889802272</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.178101" lon="24.714100">
+	<name>Shell 9005 Ловеч</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/386"><text>Shell 9005 Ловеч във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 35, км 36+801 ляво]]></StreetAddress>
+			<City>Ловеч</City>
+			<Country>България</Country>
+			<PostalCode>5567</PostalCode>
+		</Address>
+		<PhoneNumber>0888758975</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.422798" lon="25.642700">
+	<name>Shell 6007 Траяна</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/387"><text>Shell 6007 Траяна във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Ангел Кънчев №2]]></StreetAddress>
+			<City>Стара Загора</City>
+			<Country>България</Country>
+			<PostalCode>6001</PostalCode>
+		</Address>
+		<PhoneNumber>0888348730</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.726601" lon="23.949200">
+	<name>Shell 9011 Оряхово</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/388"><text>Shell 9011 Оряхово във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Архитект Цолов №140]]></StreetAddress>
+			<City>Оряхово</City>
+			<Country>България</Country>
+			<PostalCode>3300</PostalCode>
+		</Address>
+		<PhoneNumber>0884115806</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.015800" lon="24.865801">
+	<name>Shell 3001 Асеновград</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/394"><text>Shell 3001 Асеновград във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. България]]></StreetAddress>
+			<City>Асеновград</City>
+			<Country>България</Country>
+			<PostalCode>4230</PostalCode>
+		</Address>
+		<PhoneNumber>033165107</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.687500" lon="23.275400">
+	<name>Shell 3018 София Красна Поляна</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/396"><text>Shell 3018 София Красна Поляна във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Никола Мушанов №120]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1330</PostalCode>
+		</Address>
+		<PhoneNumber>0897885413</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.185932" lon="24.321943">
+	<name>Shell 3029 Пазарджик Хеброс</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/397"><text>Shell 3029 Пазарджик Хеброс във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Любен Боянов]]></StreetAddress>
+			<City>Пазарджик</City>
+			<Country>България</Country>
+			<PostalCode>4400</PostalCode>
+		</Address>
+		<PhoneNumber>0884331793</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.658600" lon="23.381701">
+	<name>Shell 3017 София Изток</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/398"><text>Shell 3017 София Изток във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Цариградско шосе]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1750</PostalCode>
+		</Address>
+		<PhoneNumber>0887309768</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.040211" lon="24.529522">
+	<name>Shell 6002 Микре</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/399"><text>Shell 6002 Микре във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път 4, km 35 дясно]]></StreetAddress>
+			<City>Микре</City>
+			<Country>България</Country>
+			<PostalCode>5572</PostalCode>
+		</Address>
+		<PhoneNumber>0889755255</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.073502" lon="25.609800">
+	<name>Shell 3031 Велико Търново</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/400"><text>Shell 3031 Велико Търново във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Магистрална №19]]></StreetAddress>
+			<City>Велико Търново</City>
+			<Country>България</Country>
+			<PostalCode>5005</PostalCode>
+		</Address>
+		<PhoneNumber>062601743</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.731560" lon="23.296413">
+	<name>Shell 3023 София Ломско Шосе</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/402"><text>Shell 3023 София Ломско Шосе във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Ломско шосе]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1220</PostalCode>
+		</Address>
+		<PhoneNumber>0887921445</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.355057" lon="23.547932">
+	<name>Shell 1024 Самоков</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/403"><text>Shell 1024 Самоков във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[гл. път Самоков - София]]></StreetAddress>
+			<City>Самоков</City>
+			<Country>България</Country>
+			<PostalCode>2000</PostalCode>
+		</Address>
+		<PhoneNumber>0888378307</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.197701" lon="24.633400">
+	<name>Shell 6006 Тракия юг</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/405"><text>Shell 6006 Тракия юг във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[посока София-Бургас, km 118+035]]></StreetAddress>
+			<City>АМ Тракия</City>
+			<Country>България</Country>
+			<PostalCode>4202</PostalCode>
+		</Address>
+		<PhoneNumber>0884331797</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.510300" lon="27.463499">
+	<name>Shell 3015 Бургас Колодрум</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/409"><text>Shell 3015 Бургас Колодрум във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Струга №8]]></StreetAddress>
+			<City>Бургас</City>
+			<Country>България</Country>
+			<PostalCode>8001</PostalCode>
+		</Address>
+		<PhoneNumber>0899996735</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.833099" lon="25.958401">
+	<name>Shell 2007 Русе</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/410"><text>Shell 2007 Русе във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. България №9]]></StreetAddress>
+			<City>Русе</City>
+			<Country>България</Country>
+			<PostalCode>7001</PostalCode>
+		</Address>
+		<PhoneNumber>0898422520</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="43.521538" lon="26.534456">
+	<name>Shell 3004 Разград</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/411"><text>Shell 3004 Разград във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Априлско въстание]]></StreetAddress>
+			<City>Разград</City>
+			<Country>България</Country>
+			<PostalCode>7200</PostalCode>
+		</Address>
+		<PhoneNumber>0888374599</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.706902" lon="23.457300">
+	<name>Shell 3019 София Хемус</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/413"><text>Shell 3019 София Хемус във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Ботевградско шосе (изход от София)]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1839</PostalCode>
+		</Address>
+		<PhoneNumber>0878951841</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.581001" lon="23.744600">
+	<name>Shell 1011 Гоце Делчев</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/414"><text>Shell 1011 Гоце Делчев във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Панаирски ливади]]></StreetAddress>
+			<City>Гоце Делчев</City>
+			<Country>България</Country>
+			<PostalCode>2900</PostalCode>
+		</Address>
+		<PhoneNumber>0885501170</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.843498" lon="26.122700">
+	<name>Shell 4006 Любимец Запад</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1484"><text>Shell 4006 Любимец Запад във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[км 92+300 дясно]]></StreetAddress>
+			<City>АМ Марица</City>
+			<Country>България</Country>
+			<PostalCode>6550</PostalCode>
+		</Address>
+		<PhoneNumber>0885759001</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.844601" lon="26.119900">
+	<name>Shell 4005 Любимец Изток</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1485"><text>Shell 4005 Любимец Изток във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[км 92+300 ляво]]></StreetAddress>
+			<City>АМ Марица</City>
+			<Country>България</Country>
+			<PostalCode>6550</PostalCode>
+		</Address>
+		<PhoneNumber>0885732020</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.539547" lon="23.129436">
+	<name>Shell 4004 Студена</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1486"><text>Shell 4004 Студена във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[km 294 + 500]]></StreetAddress>
+			<City>АМ Струма</City>
+			<Country>България</Country>
+			<PostalCode>2344</PostalCode>
+		</Address>
+		<PhoneNumber>0887957821</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="41.875603" lon="23.413408">
+	<name>Shell 1032 Разлог</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1487"><text>Shell 1032 Разлог във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[Реденка, 5-ти км]]></StreetAddress>
+			<City>Разлог</City>
+			<Country>България</Country>
+			<PostalCode>2760</PostalCode>
+		</Address>
+		<PhoneNumber>0892218346</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.661583" lon="23.456472">
+	<name>Shell 5001 София Казичене</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1488"><text>Shell 5001 София Казичене във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Околовръстен път (Казичене)]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1532</PostalCode>
+		</Address>
+		<PhoneNumber>0885899665</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.631599" lon="24.814301">
+	<name>Shell 1033 Карлово</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1489"><text>Shell 1033 Карлово във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[изход за Пловдив]]></StreetAddress>
+			<City>Карлово</City>
+			<Country>България</Country>
+			<PostalCode>4300</PostalCode>
+		</Address>
+		<PhoneNumber>0887717779</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.022316" lon="24.897863">
+	<name>Shell 1031 Цар Иван Асен</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1490"><text>Shell 1031 Цар Иван Асен във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Цар Иван Асен II №129]]></StreetAddress>
+			<City>Асеновград</City>
+			<Country>България</Country>
+			<PostalCode>4230</PostalCode>
+		</Address>
+		<PhoneNumber>0887546865</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.584202" lon="27.510300">
+	<name>Shell 1034 Каблешково</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1491"><text>Shell 1034 Каблешково във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[път Бургас-Несебър, до с. Рудник]]></StreetAddress>
+			<City>Рудник</City>
+			<Country>България</Country>
+			<PostalCode>8112</PostalCode>
+		</Address>
+		<PhoneNumber>0888444244</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.705101" lon="23.311199">
+	<name>Shell 5005 Опълченска</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1492"><text>Shell 5005 Опълченска във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[ул. Опълченска]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1303</PostalCode>
+		</Address>
+		<PhoneNumber>0895755801</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.696400" lon="23.355885">
+	<name>Shell 5006 Подуене</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1493"><text>Shell 5006 Подуене във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[бул. Ботевградско шосе]]></StreetAddress>
+			<City>София</City>
+			<Country>България</Country>
+			<PostalCode>1505</PostalCode>
+		</Address>
+		<PhoneNumber>0885045588</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.187637" lon="24.361858">
+	<name>Shell 1037 Пазарджик изток</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1960"><text>Shell 1037 Пазарджик изток във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[Пловдивско шосе]]></StreetAddress>
+			<City>Пазарджик</City>
+			<Country>България</Country>
+			<PostalCode>4400</PostalCode>
+		</Address>
+		<PhoneNumber></PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.532101" lon="26.399799">
+	<name>Shell 4007 Ямбол север</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1961"><text>Shell 4007 Ямбол север във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[km 276 +150 (посока Бургас-София)]]></StreetAddress>
+			<City>АМ Тракия</City>
+			<Country>България</Country>
+			<PostalCode>8635</PostalCode>
+		</Address>
+		<PhoneNumber>0876999264</PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+<wpt lat="42.454754" lon="27.418425">
+	<name>Shell 1036 Бургас Меден Рудник</name>
+	<desc><![CDATA[Предлагани горива: FuelSave 95, FuelSave Diesel, AutoGas, V-Power Nitro+ 95, V-Power Nitro+ Racing, V-Power Nitro+ Diesel]]></desc>
+	<src>Fuelo.net</src>
+	<link href="http://fuelo.net/gasstation/id/1962"><text>Shell 1036 Бургас Меден Рудник във Fuelo</text></link>
+	<sym>Gas Station</sym>
+	<type>Gas Station</type>
+
+	<extensions>
+	<WaypointExtension>
+		<Categories>
+			<Category>Бензиностанции</Category>
+		</Categories>
+		<Address>
+			<StreetAddress><![CDATA[кв. Меден Рудник, бл. 294]]></StreetAddress>
+			<City>Бургас</City>
+			<Country>България</Country>
+			<PostalCode>8112</PostalCode>
+		</Address>
+		<PhoneNumber></PhoneNumber>
+	</WaypointExtension>
+	</extensions>
+</wpt>
+</gpx>

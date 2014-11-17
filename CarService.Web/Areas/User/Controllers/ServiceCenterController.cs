@@ -15,6 +15,7 @@
     using CarService.Data;
     using CarService.Web.Areas.User.Models;
     using CarService.Models;
+    using CarService.Web.Common;
 
     public class ServiceCenterController : UserAreaController
     {
@@ -28,11 +29,6 @@
 
         }
 
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [AcceptVerbs(HttpVerbs.Post)]
@@ -41,7 +37,7 @@
             if (ModelState.IsValid)
             {
                 var serviceCenter = new CarServiceCenter();
-               
+
                 Mapper.Map(serviceCenterModel, serviceCenter);
 
                 serviceCenter.CreatedOn = DateTime.Now;
@@ -64,21 +60,20 @@
         public ActionResult AddServiceCenter()
         {
             return View();
-        }        
+        }
 
         public ActionResult ServiceCenters()
         {
+            this.CalculateDistances();
             return View();
         }
 
-        public ActionResult ServiceCenterDetails()
+        public ActionResult ServiceCenterDetails(int id)
         {
-            var serviceCenterId = int.Parse(this.Request.QueryString.GetValues("id")[0]);
-
             var serviceCenter = this.data.CarServiceCenters
                                         .All()
                                         .Project().To<CarServiceCenterViewModel>()
-                                        .FirstOrDefault(x => x.Id == serviceCenterId);
+                                        .FirstOrDefault(x => x.Id == id);
 
             if (serviceCenter == null)
             {
@@ -102,7 +97,8 @@
         {
             var result = this.data.CarServiceCenters
                 .All()
-                .Project().To<CarServiceCenterViewModel>();
+                .Project().To<CarServiceCenterViewModel>()
+                .ToList();
 
             return Json(result.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
         }
@@ -126,6 +122,77 @@
                 serviceCenter.ImgUrl = DefaulImagePath;
             }
             this.data.SaveChanges();
+        }
+
+        private void CalculateDistances()
+        {
+            var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
+            var userLocation = new GeoPoint()
+            {
+                Lat = double.Parse(userLocationAsStrings[0]),
+                Lng = double.Parse(userLocationAsStrings[1])
+            };
+
+            var serviceCenters = this.data.CarServiceCenters.All();
+
+            foreach (var serviceCenter in serviceCenters)
+            {
+                var serviceCenterLocationAsStrings = serviceCenter.Location.Split(new char[] { ';' });
+             
+                var serviceCenterLocation = new GeoPoint
+                {
+                    Lat = double.Parse(serviceCenterLocationAsStrings[0]),
+                    Lng = double.Parse(serviceCenterLocationAsStrings[1])
+                };
+                
+                serviceCenter.DistanceTo = this.GetDistance(userLocation, serviceCenterLocation);
+            }
+            this.data.SaveChanges();
+        }
+
+        //private List<CarServiceCenterViewModel> PutDistances(List<CarServiceCenterViewModel> serviceCenters)
+        //{
+        //    var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
+        //    var userLocation = new GeoPoint()
+        //    {
+        //        Lat = double.Parse(userLocationAsStrings[0]),
+        //        Lng = double.Parse(userLocationAsStrings[1])
+        //    };
+
+        //    foreach (var serviceCenter in serviceCenters)
+        //    {
+        //        var serviceCenterLocationAsStrings = serviceCenter.Location.Split(new char[] { ';' });
+        //        var serviceCenterLocation = new GeoPoint
+        //        {
+        //            Lat = double.Parse(serviceCenterLocationAsStrings[0]),
+        //            Lng = double.Parse(serviceCenterLocationAsStrings[1])
+        //        };
+
+        //        var distance = this.GetDistance(userLocation, serviceCenterLocation);
+
+        //        serviceCenter.DistanceTo = distance;
+        //    }
+
+        //    return serviceCenters;
+        //}
+
+        private double GetDistance(GeoPoint p1, GeoPoint p2)
+        {
+
+            var R = 6378137;
+            var dLat = ConvertToRadian(p2.Lat - p1.Lat);
+            var dLong = ConvertToRadian(p2.Lng - p1.Lng);
+            var a = Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
+              Math.Cos(ConvertToRadian(p1.Lat)) * Math.Cos(ConvertToRadian(p2.Lat)) *
+              Math.Sin(dLong / 2) * Math.Sin(dLong / 2);
+            var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+            var d = R * c;
+            return d / 1000; // returns the distance in meter
+        }
+
+        private double ConvertToRadian(double x)
+        {
+            return (x * Math.PI / 180);
         }
     }
 }

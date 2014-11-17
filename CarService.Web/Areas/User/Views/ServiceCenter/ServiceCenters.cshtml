@@ -4,31 +4,22 @@
 }
 
 <h2>ServiceCenters</h2>
-
+<br/>
+<br/>
 @(Html.Kendo()
         .Grid<CarServiceCenterViewModel>()
-    .Name("service-centers")
-    .Columns(columns =>
-        {
-            columns.Bound(model => model.Name);
-            columns.Bound(model => model.StreetAddress);
-        })
-        .ClientRowTemplate(
-        "<tr data-uid='#: uid #'>" +
-            "<td>" +
-                        "<a href='" + Url.Content("~/User/ServiceCenter/ServiceCenterDetails/?id=") + "#: Id #" + "'>" + "#: Name #" + "</a>" +
-            "</td>" +
-            "<td>" +
-                    "#: StreetAddress #" +
-            "</td>" +
-         "</tr>"
-        )
+        .Name("service-centers")            
+        .Columns(columns =>
+            {
+                columns.Bound(model => model.Name).ClientTemplate("<a href='" + Url.Content("~/User/ServiceCenter/ServiceCenterDetails/") + "#: Id #" + "'>" + "#: Name #" + "</a>");
+                columns.Bound(model => model.StreetAddress);
+                columns.Bound(model => model.DistanceTo).Format("{0:0.00}");
+            })
         .Pageable(p =>
             p.PageSizes(true)
-            .Refresh(true)
-        )
+            .Refresh(true))
         .Sortable()
-        .Filterable()
+        .Filterable(f => f.Mode(GridFilterMode.Row))        
         .DataSource(data =>
         {
             data.Ajax()

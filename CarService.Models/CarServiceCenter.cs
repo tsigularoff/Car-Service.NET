@@ -20,6 +20,8 @@
 
         public string StreetAddress { get; set; }
 
+        public string City { get; set; }
+
         public DateTime CreatedOn { get; set; }
 
         public DateTime ModifiedOn { get; set; }
@@ -27,6 +29,8 @@
         public string ImgUrl { get; set; }        
 
         public string OwnerId { get; set; }
+
+        public double DistanceTo { get; set; }
 
         public virtual ApplicationUser Owner { get; set; }
 

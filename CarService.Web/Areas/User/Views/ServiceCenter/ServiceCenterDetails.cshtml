@@ -44,7 +44,7 @@
             data.Ajax()
                 .PageSize(10)
                 .ServerOperation(true)
-                .Read("GetServiceCenterServices", "CarService", new { id = this.Request.QueryString.GetValues("id")[0] });
+                .Read("GetServiceCenterServices", "CarService", new { id = Model.Id });
         }))
     </div>
 </div>

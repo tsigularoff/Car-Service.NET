@@ -6,11 +6,13 @@ namespace CarService.Data.Migrations
     using System.Linq;
     using System.Collections.Generic;
     using System.Web.Hosting;
+
     using Microsoft.AspNet.Identity.EntityFramework;
     using Microsoft.AspNet.Identity;
 
     using CarService.Data.SeedData;
     using CarService.Models;
+    using CarService.Data.SeedData;
 
     public sealed class Configuration : DbMigrationsConfiguration<CarServiceDbContext>
     {
@@ -22,9 +24,20 @@ namespace CarService.Data.Migrations
 
         protected override void Seed(CarServiceDbContext context)
         {
-            this.SeedUsers(context);
-            this.SeedCarModels(context);
+            if (!context.Users.Any())
+            {
+                this.SeedUsers(context);    
+            }
 
+            if (!context.CarModles.Any())
+            {
+                this.SeedCarModels(context);    
+            }
+
+            if (!context.CarServiceCenters.Any())
+            {
+                this.SeedServiceCenters(context);    
+            }
         }
 
         private void SeedCarModels(CarServiceDbContext context)
@@ -48,6 +61,12 @@ namespace CarService.Data.Migrations
 
             roleManager.Create(new IdentityRole("Admin"));
 
+            var sampleUser = new ApplicationUser
+            {
+                UserName = "pesho@pesho.com",
+                Email = "pesho@pesho.com"
+            };
+
             var userAdmin = new ApplicationUser
             {
                 UserName = "admin@admin.com",
@@ -55,12 +74,25 @@ namespace CarService.Data.Migrations
             };
 
             var resultAdmin = userManager.Create(userAdmin, "123456");
+            var resultUser = userManager.Create(sampleUser, "123456");
 
             if (resultAdmin.Succeeded)
             {
-                userManager.AddToRole(userAdmin.Id, "Admin");
+                userManager.AddToRole(userAdmin.Id, "Admin");                
             }
 
+            context.SaveChanges();
+        }
+
+        private void SeedServiceCenters(CarServiceDbContext context)
+        {
+            var rootPath = HostingEnvironment.MapPath("~/");
+            var serviceCentersPath = rootPath + @"../CarService.Data/SeedData/CarServiceCenters.xml";
+            var reader = new XMLGasStationReader();
+
+            var serviceCenters = reader.GetServiceCenters(serviceCentersPath);
+
+            context.CarServiceCenters.AddOrUpdate(serviceCenters.ToArray());
             context.SaveChanges();
         }
     }
