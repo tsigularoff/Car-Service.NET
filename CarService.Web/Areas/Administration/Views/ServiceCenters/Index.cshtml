@@ -35,7 +35,7 @@
                         .Destroy("DeleteServiceCenter", "ServiceCenters")
                         .Create("CreateServiceCenter", "ServiceCenters");
                 })
-                .Editable(x => x.Mode(GridEditMode.PopUp).TemplateName("CreateServiceCenter"))
+                .Editable(x => x.Mode(GridEditMode.PopUp).TemplateName("AddEditServiceCenter"))
                 .Pageable(p => p.PageSizes(true).Refresh(true))                
                 .Sortable()
                 .Filterable()
