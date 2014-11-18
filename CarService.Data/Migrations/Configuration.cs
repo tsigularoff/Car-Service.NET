@@ -16,10 +16,12 @@ namespace CarService.Data.Migrations
 
     public sealed class Configuration : DbMigrationsConfiguration<CarServiceDbContext>
     {
+        private Random random;
         public Configuration()
         {
             this.AutomaticMigrationDataLossAllowed = true;
             this.AutomaticMigrationsEnabled = true;
+            this.random = new Random();
         }
 
         protected override void Seed(CarServiceDbContext context)
@@ -37,6 +39,11 @@ namespace CarService.Data.Migrations
             if (!context.CarServiceCenters.Any())
             {
                 this.SeedServiceCenters(context);    
+            }
+
+            if (!context.CarServices.Any())
+            {
+                this.SeedCarServices(context);
             }
         }
 
@@ -93,6 +100,34 @@ namespace CarService.Data.Migrations
             var serviceCenters = reader.GetServiceCenters(serviceCentersPath);
 
             context.CarServiceCenters.AddOrUpdate(serviceCenters.ToArray());
+            context.SaveChanges();
+        }
+
+        private void SeedCarServices(CarServiceDbContext context)
+        {
+            var carServiceNames = new List<string>() { "Смяна масло", "Смяна пистов ремък", "Смяна наклатки", "Смяна серво управление", "Реглаж на преден мост" };
+            var carModels = context.CarModles.ToList();
+            var carServices = new List<CarService>();
+            var serviceCentersIds = context.CarServiceCenters.Select(x=> x.Id).ToList();
+
+
+            for (int i = 0; i < 500; i++)
+            {
+                var carService = new CarService
+                {
+                    Name = carServiceNames[this.random.Next(0, carServiceNames.Count)],
+                    CarModelId = carModels[this.random.Next(0, carModels.Count)].Id,
+                    Price = 0,
+                    CreatedOn = DateTime.Now,
+                    ModifiedOn = DateTime.Now
+                };
+                
+                var serviceCenterId = serviceCentersIds[this.random.Next(0, serviceCentersIds.Count)];
+                var serviceCenter = context.CarServiceCenters.FirstOrDefault(x => x.Id == serviceCenterId);
+                serviceCenter.CarServices.Add(carService);                
+            }
+
+            //context.CarServices.AddOrUpdate(carServices.ToArray());
             context.SaveChanges();
         }
     }

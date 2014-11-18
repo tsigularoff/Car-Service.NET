@@ -13,7 +13,7 @@
         [Display(Name = "Car Service Name")]
         [Required(ErrorMessage = "Service name is required!")]
         [StringLength(50, MinimumLength = 10, ErrorMessage = "Car service name must be between 10 and 50 characters!")]
-        [RegularExpression("[\\sa-zA-Z0-9\\.]+", ErrorMessage = "Allowed characters : 'a-z', 'A-Z', '0-9', '.'")]
+        [RegularExpression("[\\sa-zA-Z0-9а-яА-я\\.]+", ErrorMessage = "Allowed characters : 'a-z', 'A-Z', '0-9', '.'")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Car model is required!")]

@@ -126,6 +126,10 @@
 
         private void CalculateDistances()
         {
+            if (this.Session["userLocation"] == null)
+            {
+                return;
+            }
             var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
             var userLocation = new GeoPoint()
             {
@@ -145,54 +149,11 @@
                     Lng = double.Parse(serviceCenterLocationAsStrings[1])
                 };
                 
-                serviceCenter.DistanceTo = this.GetDistance(userLocation, serviceCenterLocation);
+                serviceCenter.DistanceTo = GeoDistance.GetDistance(userLocation, serviceCenterLocation);
             }
             this.data.SaveChanges();
         }
 
-        //private List<CarServiceCenterViewModel> PutDistances(List<CarServiceCenterViewModel> serviceCenters)
-        //{
-        //    var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
-        //    var userLocation = new GeoPoint()
-        //    {
-        //        Lat = double.Parse(userLocationAsStrings[0]),
-        //        Lng = double.Parse(userLocationAsStrings[1])
-        //    };
-
-        //    foreach (var serviceCenter in serviceCenters)
-        //    {
-        //        var serviceCenterLocationAsStrings = serviceCenter.Location.Split(new char[] { ';' });
-        //        var serviceCenterLocation = new GeoPoint
-        //        {
-        //            Lat = double.Parse(serviceCenterLocationAsStrings[0]),
-        //            Lng = double.Parse(serviceCenterLocationAsStrings[1])
-        //        };
-
-        //        var distance = this.GetDistance(userLocation, serviceCenterLocation);
-
-        //        serviceCenter.DistanceTo = distance;
-        //    }
-
-        //    return serviceCenters;
-        //}
-
-        private double GetDistance(GeoPoint p1, GeoPoint p2)
-        {
-
-            var R = 6378137;
-            var dLat = ConvertToRadian(p2.Lat - p1.Lat);
-            var dLong = ConvertToRadian(p2.Lng - p1.Lng);
-            var a = Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
-              Math.Cos(ConvertToRadian(p1.Lat)) * Math.Cos(ConvertToRadian(p2.Lat)) *
-              Math.Sin(dLong / 2) * Math.Sin(dLong / 2);
-            var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
-            var d = R * c;
-            return d / 1000; // returns the distance in meter
-        }
-
-        private double ConvertToRadian(double x)
-        {
-            return (x * Math.PI / 180);
-        }
+       
     }
 }

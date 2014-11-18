@@ -200,6 +200,7 @@
     <Compile Include="Areas\User\Models\CarViewModel.cs" />
     <Compile Include="Areas\User\Models\ManufacturerViewModel.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
+    <Compile Include="Common\GeoDistance.cs" />
     <Compile Include="Common\GeoPoint.cs" />
     <Compile Include="Controllers\Account\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
