@@ -13,18 +13,18 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">@item.Name</h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body home-page-img-cnt">
 
                     @if (!User.Identity.IsAuthenticated)
                     {
                         <a href="Public/ServiceCenterDetails/?id=@item.Id">
-                            <img src="@item.ImgUrl" class="img-responsive" />
+                            <img src="@item.ImgUrl" class="home-page-img" />
                         </a>
                     }
                     else
                     {
                         <a href="User/ServiceCenter/ServiceCenterDetails/?id=@item.Id">
-                            <img src="@item.ImgUrl" class="img-responsive" />
+                            <img src="@item.ImgUrl" class="home-page-img" />
                         </a>
                     }
 

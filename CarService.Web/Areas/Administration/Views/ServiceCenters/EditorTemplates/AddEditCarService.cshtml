@@ -1,18 +1,19 @@
 ﻿@using CarService.Web.Areas.Administration.ViewModels
-@model CarServiceCenterViewModel
+@model CarServiceViewModel
 
 <h3 class="panel-heading">Add/Edit service center</h3>
-<div >
+<div>
     <div class="form-group">
         @Html.LabelFor(model => model.Name, new { @class = "col-md-5" })
         @Html.EditorFor(model => model.Name)
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.StreetAddress, new { @class = "col-md-5" })
-        @Html.EditorFor(model => model.StreetAddress)        
+        @Html.LabelFor(model => model.CarModelName, new { @class = "col-md-5" })
+        @Html.EditorFor(model => model.CarModelName)
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.Location, new { @class = "col-md-5" })
-        @Html.EditorFor(model => model.Location)
+        @Html.LabelFor(model => model.Year, new { @class = "col-md-5" })
+        @Html.EditorFor(model => model.Year)
     </div>
 </div>
+

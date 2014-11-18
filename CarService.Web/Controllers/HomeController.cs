@@ -15,7 +15,6 @@
             :base(data)
         {
         }
-
         
         public ActionResult Index()
         {
@@ -53,6 +52,11 @@
                .Take(ServiceCentersCount);               
 
             return PartialView("_LastServiceCenters", lastCarServiceCenters);
+        }
+
+        public ActionResult Error()
+        {
+            return View();
         }
 
     }

@@ -35,9 +35,10 @@
                         .Destroy("DeleteServiceCenter", "ServiceCenters")
                         .Create("CreateServiceCenter", "ServiceCenters");
                 })
-                .Editable(x => x.Mode(GridEditMode.PopUp))
-                .Pageable(p => p.PageSizes(true).Refresh(true))
+                .Editable(x => x.Mode(GridEditMode.PopUp).TemplateName("CreateServiceCenter"))
+                .Pageable(p => p.PageSizes(true).Refresh(true))                
                 .Sortable()
+                .Filterable()
                 .ClientDetailTemplateId("template")
                 .Events(events => events.DataBound("dataBound")))
 
@@ -74,7 +75,7 @@
                         .Create("CreateCarServiceForServiceCenter", "CarServices", new { serviceCenterId = "#=ServiceCenterId#" }))                        
                     .Pageable()
                     .Sortable()
-                    .Editable(x=> x.Mode(GridEditMode.PopUp))
+                    .Editable(x=> x.Mode(GridEditMode.PopUp))                    
                     .ToClientTemplate()
                     );                
                 })

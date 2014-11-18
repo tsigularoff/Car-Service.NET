@@ -480,6 +480,7 @@
     <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\CreateServiceCenter.cshtml" />
     <Content Include="Areas\Administration\Views\CarModels\Index.cshtml" />
     <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\CarModel.cshtml" />
+    <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\AddEditCarService.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
