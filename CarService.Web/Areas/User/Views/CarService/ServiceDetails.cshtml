@@ -15,9 +15,10 @@
                 cols.Bound(x => x.DistanceTo).Title("Distance to service center [km]");
             })
             .Sortable()
+            .Pageable()
             .DataSource(dataSource => dataSource
-            .Ajax()
-            .PageSize(5)
+            .Ajax()            
+            .PageSize(10)
             .ServerOperation(false)))
 
 <script>

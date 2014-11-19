@@ -7,6 +7,7 @@
     using CarService.Web.ViewModels;
 
     using AutoMapper.QueryableExtensions;
+using CarService.Web.Common;
     
     public class HomeController : BaseController
     {
@@ -57,6 +58,18 @@
         public ActionResult Error()
         {
             return View();
+        }
+
+        [HttpPost]
+        public JsonResult UserLocation(GeoPointViewModel location)
+        {
+            if (location != null && ModelState.IsValid)
+            {
+                this.Session["userLocation"] = string.Format("{0};{1}", location.Lat, location.Lng);
+
+                return Json("location acquired");
+            }
+            return Json("acquiring location failed");
         }
 
     }

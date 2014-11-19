@@ -126,34 +126,42 @@
 
         private void CalculateDistances()
         {
-            if (this.Session["userLocation"] == null)
+            var isUserLocated = false;
+            var userLocation = new GeoPoint();
+
+            if (this.Session["userLocation"] != null)
             {
-                return;
+                isUserLocated = true;
+
+                var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
+                userLocation.Lat = double.Parse(userLocationAsStrings[0]);
+                userLocation.Lng = double.Parse(userLocationAsStrings[1]);                
             }
-            var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
-            var userLocation = new GeoPoint()
-            {
-                Lat = double.Parse(userLocationAsStrings[0]),
-                Lng = double.Parse(userLocationAsStrings[1])
-            };
+           
 
             var serviceCenters = this.data.CarServiceCenters.All();
 
             foreach (var serviceCenter in serviceCenters)
             {
                 var serviceCenterLocationAsStrings = serviceCenter.Location.Split(new char[] { ';' });
-             
-                var serviceCenterLocation = new GeoPoint
+
+                if (isUserLocated)
                 {
-                    Lat = double.Parse(serviceCenterLocationAsStrings[0]),
-                    Lng = double.Parse(serviceCenterLocationAsStrings[1])
-                };
-                
-                serviceCenter.DistanceTo = GeoDistance.GetDistance(userLocation, serviceCenterLocation);
+                    var serviceCenterLocation = new GeoPoint
+                    {
+                        Lat = double.Parse(serviceCenterLocationAsStrings[0]),
+                        Lng = double.Parse(serviceCenterLocationAsStrings[1])
+                    };
+
+                    serviceCenter.DistanceTo = GeoDistance.GetDistance(userLocation, serviceCenterLocation);
+                }
+                else
+                {
+                    serviceCenter.DistanceTo = 0;
+                    TempData["message"] = "Sorry distance to service centers are not available";
+                }
             }
             this.data.SaveChanges();
         }
-
-       
     }
 }

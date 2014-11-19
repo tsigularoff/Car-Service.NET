@@ -3,7 +3,7 @@
     using CarService.Data;
     using System.Web.Mvc;
 
-    [Authorize]
+    //[Authorize]
     public class UserAreaController : Controller
     {
         protected ICarServiceData data;

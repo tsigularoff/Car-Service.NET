@@ -16,10 +16,7 @@
 
 </head>
 <body>
-
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-
-        </div>*@
+   
     <div class="container navbar-fixed-top">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,13 +38,13 @@
                   {
                       childs.Add().Action("AddCarService", "CarService", new { area = "User" }).Text("Add Car Service");
                       childs.Add().Action("SearchService", "CarService", new { area = "User" }).Text("Search Car Service");
-                  }).Visible(User.Identity.IsAuthenticated);
+                  });
               items.Add().Text("Service Centers").Items(childs =>
                   {
                       childs.Add().Action("ServiceCenters", "ServiceCenter", new { area = "User" }).Text("View all");
                       childs.Add().Action("AddServiceCenter", "ServiceCenter", new { area = "User" }).Text("Add Service Center");
-                  }).Visible(User.Identity.IsAuthenticated);
-              items.Add().Action("ServiceCenters", "Public", new { area = "" }).Visible(!User.Identity.IsAuthenticated);
+                  });
+              //items.Add().Action("ServiceCenters", "Public", new { area = "" }).Visible(!User.Identity.IsAuthenticated);
               items.Add().Text("Account").Content(@<text>
                     @Html.Partial("_LoginPartial")
                     </text>);                

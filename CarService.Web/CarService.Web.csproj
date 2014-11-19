@@ -215,6 +215,7 @@
     <Compile Include="Infrastucture\Mapping\IHaveCustomMappings.cs" />
     <Compile Include="Infrastucture\Mapping\IMapFrom.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
+    <Compile Include="ViewModels\GeoPointViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\ManageViewModels.cs" />
     <Compile Include="ViewModels\ServiceCenterViewModel.cs" />

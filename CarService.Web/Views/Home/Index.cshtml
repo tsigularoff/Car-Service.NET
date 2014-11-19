@@ -1,8 +1,6 @@
 ﻿@model CarService.Web.ViewModels.HomeViewModel
 
-<div id="homepage-jumbotron" class="jumbotron">
-    @*<h1 >Car Service .NET</h1>   
-    <p class="pull-right">Find the best place to service your car</p>*@       
+<div id="homepage-jumbotron" class="jumbotron">     
 </div>
 
 <div class="bs-component">
@@ -29,4 +27,20 @@
         </p>
     </div>   
 </div>
+
+<script>
+    var userLocationUrl = "http://localhost:3587/Home/UserLocation";
+    navigator.geolocation.getCurrentPosition(function (position) {
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+      
+        $.post(userLocationUrl,
+            {
+                Lat: lat,
+                Lng : lng
+            }).done(function (data) {
+                console.log(data);
+            })
+    })
+</script>
 

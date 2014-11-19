@@ -4,22 +4,27 @@
 }
 
 <h2>ServiceCenters</h2>
+@if (TempData["message"] != null)
+{
+    <h3>@TempData["message"].ToString()</h3>
+}
 <br/>
 <br/>
 @(Html.Kendo()
         .Grid<CarServiceCenterViewModel>()
-        .Name("service-centers")            
+        .Name("service-centers")
         .Columns(columns =>
             {
                 columns.Bound(model => model.Name).ClientTemplate("<a href='" + Url.Content("~/User/ServiceCenter/ServiceCenterDetails/") + "#: Id #" + "'>" + "#: Name #" + "</a>");
                 columns.Bound(model => model.StreetAddress);
                 columns.Bound(model => model.DistanceTo).Format("{0:0.00}");
             })
+
         .Pageable(p =>
             p.PageSizes(true)
             .Refresh(true))
         .Sortable()
-        .Filterable(f => f.Mode(GridFilterMode.Row))        
+        .Filterable(f => f.Mode(GridFilterMode.Row))
         .DataSource(data =>
         {
             data.Ajax()
