@@ -191,6 +191,7 @@
     <Compile Include="Areas\Administration\ViewModels\ManufacturerViewModel.cs" />
     <Compile Include="Areas\User\Controllers\CarsController.cs" />
     <Compile Include="Areas\User\Controllers\CarServiceController.cs" />
+    <Compile Include="Areas\User\Controllers\GameZoneController.cs" />
     <Compile Include="Areas\User\Controllers\ManufacturersController.cs" />
     <Compile Include="Areas\User\Controllers\ServiceCenterController.cs" />
     <Compile Include="Areas\User\Controllers\UserAreaController.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="ViewModels\ServiceCenterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\UserInfoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -482,6 +484,7 @@
     <Content Include="Areas\Administration\Views\CarModels\Index.cshtml" />
     <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\CarModel.cshtml" />
     <Content Include="Areas\Administration\Views\ServiceCenters\EditorTemplates\AddEditCarService.cshtml" />
+    <Content Include="Areas\User\Views\GameZone\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

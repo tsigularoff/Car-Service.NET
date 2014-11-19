@@ -9,6 +9,10 @@
 
     public class ApplicationUser : IdentityUser
     {
+        public int AddedServicesCount { get; set; }
+
+        public int AddedServiceCentersCount { get; set; }
+
         public string Location { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)

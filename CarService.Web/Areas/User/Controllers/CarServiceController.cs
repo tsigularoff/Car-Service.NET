@@ -1,7 +1,9 @@
 ﻿namespace CarService.Web.Areas.User.Controllers
 {
+    using System;
     using System.Web.Mvc;
     using System.Linq;
+    using Microsoft.AspNet.Identity;
 
     using AutoMapper.QueryableExtensions;
     using Kendo.Mvc.UI;
@@ -12,7 +14,7 @@
     using CarService.Models;
     using CarService.Web.Areas.User.Models;
     using CarService.Web.Controllers;
-    using System;
+    
 
     public class CarServiceController : UserAreaController
     {
@@ -63,7 +65,15 @@
 
             var serviceCenter = this.data.CarServiceCenters.Find(carServiceModel.ServiceCenterId);
 
-            serviceCenter.CarServices.Add(carService);
+            serviceCenter.CarServices.Add(carService);           
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var userId = this.User.Identity.GetUserId();
+                var user = this.data.Users.All().FirstOrDefault(x => x.Id == userId);
+                user.AddedServicesCount++;                
+            }
+
             this.data.SaveChanges();
 
             TempData["successMessage"] = "Service successfully added!";

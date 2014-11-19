@@ -1,17 +1,17 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using CarService.Web.ViewModels;
-using CarService.Models;
-using CarService.Web.Controllers.Account;
-
-namespace CarService.Web.Account.Controllers
+﻿namespace CarService.Web.Account.Controllers
 {
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using System.Web;
+    using System.Web.Mvc;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.Owin.Security;
+    using CarService.Web.ViewModels;
+    using CarService.Models;
+    using CarService.Web.Controllers.Account;
+
     [Authorize]
     public class ManageController : Controller
     {
@@ -50,14 +50,17 @@ namespace CarService.Web.Account.Controllers
                 : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
                 : "";
 
-            var model = new IndexViewModel
-            {
-                HasPassword = HasPassword(),
-                PhoneNumber = await UserManager.GetPhoneNumberAsync(User.Identity.GetUserId()),
-                TwoFactor = await UserManager.GetTwoFactorEnabledAsync(User.Identity.GetUserId()),
-                Logins = await UserManager.GetLoginsAsync(User.Identity.GetUserId()),
-                BrowserRemembered = await AuthenticationManager.TwoFactorBrowserRememberedAsync(User.Identity.GetUserId())
-            };
+            //var model = new IndexViewModel
+            //{
+            //    HasPassword = HasPassword(),
+            //    PhoneNumber = await UserManager.GetPhoneNumberAsync(User.Identity.GetUserId()),
+            //    TwoFactor = await UserManager.GetTwoFactorEnabledAsync(User.Identity.GetUserId()),
+            //    Logins = await UserManager.GetLoginsAsync(User.Identity.GetUserId()),
+            //    BrowserRemembered = await AuthenticationManager.TwoFactorBrowserRememberedAsync(User.Identity.GetUserId())
+            //};
+
+            var model = AutoMapper.Mapper.Map<UserInfoViewModel>(UserManager.FindById(User.Identity.GetUserId()));
+            
             return View(model);
         }
 

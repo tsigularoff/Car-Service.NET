@@ -44,7 +44,7 @@
                       childs.Add().Action("ServiceCenters", "ServiceCenter", new { area = "User" }).Text("View all");
                       childs.Add().Action("AddServiceCenter", "ServiceCenter", new { area = "User" }).Text("Add Service Center");
                   });
-              //items.Add().Action("ServiceCenters", "Public", new { area = "" }).Visible(!User.Identity.IsAuthenticated);
+              items.Add().Action("Index", "GameZone", new { area = "User" }).Text("Fun Zone :)");
               items.Add().Text("Account").Content(@<text>
                     @Html.Partial("_LoginPartial")
                     </text>);                

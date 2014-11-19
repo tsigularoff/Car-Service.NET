@@ -5,6 +5,7 @@
     using System.Web.Mvc;
     using System.Linq;
     using System.Collections.Generic;
+    using Microsoft.AspNet.Identity;
 
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
@@ -49,7 +50,16 @@
                 SaveImage(serviceCenter);
 
                 TempData["successMessage"] = SuccessMessage;
-                TempData["serviceCenterName"] = serviceCenter.Name;
+                TempData["serviceCenterName"] = serviceCenter.Name;                
+
+                if (User.Identity.IsAuthenticated)
+                {
+                    var userId = this.User.Identity.GetUserId();
+                    var user = this.data.Users.All().FirstOrDefault(x => x.Id == userId);
+                    user.AddedServicesCount++;
+                }
+
+                this.data.SaveChanges();
                 return RedirectToAction("AddCarService", "CarService");
             }
 
