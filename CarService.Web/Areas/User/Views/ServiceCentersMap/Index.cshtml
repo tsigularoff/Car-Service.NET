@@ -1,10 +1,23 @@
-﻿<h2>Fun zone</h2>
+﻿@model IEnumerable<CarService.Web.Areas.User.Models.CarServiceCenterMapViewModel>
 
-<div class="col-md-3 pull-right">
-    <div id="mapCanvas"></div>   
+<h2>Service centers map</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="mapCanvas"></div>
+    </div>
 </div>
 
+@foreach(var serviceCenter in Model)
+{
+    <div class="service-centers">       
+        <input type="text" class="sc-name" hidden="hidden" value="@serviceCenter.Name" />
+        <input type="text" class="sc-lat"  hidden="hidden" value="@serviceCenter.Lat" />
+        <input type="text" class="sc-lng"  hidden="hidden" value="@serviceCenter.Lng" />
+    </div>
+    
+}
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
-@Scripts.Render("~/bundles/markerevent")
+@Scripts.Render("~/bundles/serviceCentersMarkers")

@@ -1,8 +1,6 @@
 ﻿var map;
 
-function initialize() {
-    //var defaultLat = 42.6955;
-    //var defaultLon = 23.3318;
+function initialize() {   
     var lat = (document.getElementById('lat').value * 1);
     var lon = (document.getElementById('lng').value * 1);
 

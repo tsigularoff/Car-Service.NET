@@ -27,6 +27,9 @@
             bundles.Add(new ScriptBundle("~/bundles/markerevent").Include(
                         "~/Scripts/markerevent.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/serviceCentersMarkers").Include(
+                "~/Scripts/serviceCentersMarkers.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                        "~/Scripts/jquery.validate*"));
 

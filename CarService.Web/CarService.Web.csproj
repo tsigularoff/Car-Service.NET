@@ -195,6 +195,7 @@
     <Compile Include="Areas\User\Controllers\ManufacturersController.cs" />
     <Compile Include="Areas\User\Controllers\ServiceCenterController.cs" />
     <Compile Include="Areas\User\Controllers\UserAreaController.cs" />
+    <Compile Include="Areas\User\Models\CarServiceCenterMapViewModel.cs" />
     <Compile Include="Areas\User\Models\CarServiceCenterViewModel.cs" />
     <Compile Include="Areas\User\Models\CarServiceOutputViewModel.cs" />
     <Compile Include="Areas\User\Models\CarServiceInputViewModel.cs" />
@@ -464,6 +465,7 @@
     <Content Include="Areas\User\Views\ServiceCenter\ServiceCenters.cshtml" />
     <Content Include="Scripts\distanceCalculation.js" />
     <Content Include="Scripts\markerevent.js" />
+    <Content Include="Scripts\serviceCentersMarkers.js" />
     <Content Include="Views\Shared\DisplayTemplates\StringHyperlink.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Currency.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
