@@ -181,6 +181,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
-/CarService.Web/Lib/Kendo.Mvc.dll
-/CarService.Web/Lib/Kendo.Mvc.xml
 /CarService.Web/Imgs/ServiceCenters
