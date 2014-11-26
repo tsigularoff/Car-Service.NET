@@ -10,7 +10,7 @@
 
     public class XMLGasStationReader
     {
-        private const string DefaulImagePath = "/Imgs/Logos/noimage.jpg";
+        private const string DefaulImagePath = "/Imgs/Logos/default.jpg";
 
         public XMLGasStationReader()
         {            

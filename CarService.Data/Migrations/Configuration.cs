@@ -105,7 +105,7 @@ namespace CarService.Data.Migrations
 
         private void SeedCarServices(CarServiceDbContext context)
         {
-            var carServiceNames = new List<string>() { "Смяна масло", "Смяна пистов ремък", "Смяна наклатки", "Смяна серво управление", "Реглаж на преден мост" };
+            var carServiceNames = new List<string>() { "Oil change", "Serpentine belt change", "Brake discs change", "Hydraulics steering diagnostic", "Fuel pump change" };
             var carModels = context.CarModles.ToList();
             var carServices = new List<CarService>();
             var serviceCentersIds = context.CarServiceCenters.Select(x=> x.Id).ToList();

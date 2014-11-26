@@ -31,7 +31,7 @@
         private const int MinImageSize = 10240;
         private const string SuccessMessage = "Service center created!";
         private const string ImagePath = "/Imgs/ServiceCenters";
-        private const string DefaulImagePath = "/Imgs/Logos/noimage.jpg";
+        private const string DefaulImagePath = "/Imgs/Logos/default.jpg";
         private const string InvalidImageSizeMessage = "Invalid image size of format";
         private const string AllowedImageType = "image/jpeg";
 
