@@ -26,9 +26,9 @@
         private const int MaxImageSize = 1048576;
 
         /// <summary>
-        /// Min Image Size 10KB
+        /// Min Image Size 1KB
         /// </summary>
-        private const int MinImageSize = 10240;
+        private const int MinImageSize = 1024;
         private const string SuccessMessage = "Service center created!";
         private const string ImagePath = "/Imgs/ServiceCenters";
         private const string DefaulImagePath = "/Imgs/Logos/default.jpg";
