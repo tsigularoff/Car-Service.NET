@@ -3,9 +3,9 @@
     using System.Web.Mvc;
     using CarService.Data;
 
-    public class GameZoneController : UserAreaController
+    public class ServiceCentersMapController : UserAreaController
     {
-        public GameZoneController(ICarServiceData data)
+        public ServiceCentersMapController(ICarServiceData data)
             :base(data)
         {
         }

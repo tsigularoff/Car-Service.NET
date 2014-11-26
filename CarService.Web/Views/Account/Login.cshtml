@@ -55,36 +55,8 @@
     </div>
 </div>
 
-<div class="row col-md-4">
-    <div class="form-group">
-        <label id="location-msg" class="control-label col-md-6">Acquiring location...</label>
-        <div style="padding-right: 10%">
-            <div class="progress progress-striped active">
-                <div id="location-progress" class="progress-bar" style="width: 50%"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
 
-<script>   
-    navigator.geolocation.getCurrentPosition(function (position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-
-        var location = lat + ';' + lon;
-
-        $('#location').val(location);
-
-        setProgressBarState();
-    })
-
-    function setProgressBarState() {
-        $('#location-msg').text('Location acquired!');
-        $('#location-progress').css('width', '100%');
-    }
-</script>

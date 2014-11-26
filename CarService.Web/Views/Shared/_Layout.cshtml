@@ -24,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Car Service.NET", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })            
+            @Html.ActionLink("Car Service.NET", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })                 
         </div>
         @(Html.Kendo().Menu()
           .Name("Menu")
@@ -44,15 +44,15 @@
                       childs.Add().Action("ServiceCenters", "ServiceCenter", new { area = "User" }).Text("View all");
                       childs.Add().Action("AddServiceCenter", "ServiceCenter", new { area = "User" }).Text("Add Service Center");
                   });
-              items.Add().Action("Index", "GameZone", new { area = "User" }).Text("Fun Zone :)");
+              items.Add().Action("Index", "ServiceCentersMap", new { area = "User" }).Text("Service Centers Map");
               items.Add().Text("Account").Content(@<text>
                     @Html.Partial("_LoginPartial")
-                    </text>);                
+                    </text>);
+              
           }))
 
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav"></ul>
-          
+            <ul class="nav navbar-nav"> </ul>          
         </div>
     </div>
 

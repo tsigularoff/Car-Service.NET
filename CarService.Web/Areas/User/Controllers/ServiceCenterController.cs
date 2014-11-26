@@ -20,9 +20,20 @@
 
     public class ServiceCenterController : UserAreaController
     {
+        /// <summary>
+        /// Max Image Size 1MB
+        /// </summary>
+        private const int MaxImageSize = 1048576;
+
+        /// <summary>
+        /// Min Image Size 10KB
+        /// </summary>
+        private const int MinImageSize = 10240;
         private const string SuccessMessage = "Service center created!";
         private const string ImagePath = "/Imgs/ServiceCenters";
         private const string DefaulImagePath = "/Imgs/Logos/noimage.jpg";
+        private const string InvalidImageSizeMessage = "Invalid image size of format";
+        private const string AllowedImageType = "image/jpeg";
 
         public ServiceCenterController(ICarServiceData data)
             : base(data)
@@ -35,7 +46,9 @@
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult AddServiceCenter(CarServiceCenterViewModel serviceCenterModel)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && 
+                IsImageSizeFits(Request.Files["image"].ContentLength) &&
+                Request.Files["image"].ContentType == AllowedImageType)
             {
                 var serviceCenter = new CarServiceCenter();
 
@@ -50,7 +63,7 @@
                 SaveImage(serviceCenter);
 
                 TempData["successMessage"] = SuccessMessage;
-                TempData["serviceCenterName"] = serviceCenter.Name;                
+                TempData["serviceCenterName"] = serviceCenter.Name;
 
                 if (User.Identity.IsAuthenticated)
                 {
@@ -63,7 +76,9 @@
                 return RedirectToAction("AddCarService", "CarService");
             }
 
-            return View("Index", serviceCenterModel);
+            TempData["errorMessage"] = InvalidImageSizeMessage;
+
+            return View("AddServiceCenter", serviceCenterModel);
         }
 
         [HttpGet]
@@ -107,31 +122,36 @@
         {
             var result = this.data.CarServiceCenters
                 .All()
-                .Project().To<CarServiceCenterViewModel>()
-                .ToList();
+                .Project().To<CarServiceCenterViewModel>();
+
 
             return Json(result.ToDataSourceResult(request), JsonRequestBehavior.AllowGet);
         }
 
-        private void SaveImage(CarServiceCenter serviceCenter)
+        private bool SaveImage(CarServiceCenter serviceCenter)
         {
             var imageName = string.Format("service-center-{0}", serviceCenter.Id);
+            var imageSize = Request.Files["image"].ContentLength;
 
-            if (Request.Files["image"].ContentLength > 0)
+            if (imageSize != 0)
             {
                 string extension = Path.GetExtension(Request.Files["image"].FileName);
                 string imgServerPath = string.Format("{0}/{1}{2}", Server.MapPath(ImagePath), imageName, extension);
                 if (System.IO.File.Exists(imgServerPath))
+                {
                     System.IO.File.Delete(imgServerPath);
+                }                
 
                 Request.Files["image"].SaveAs(imgServerPath);
-                serviceCenter.ImgUrl = string.Format("{0}/{1}{2}", ImagePath, imageName, extension);
+                serviceCenter.ImgUrl = string.Format("{0}/{1}{2}", ImagePath, imageName, extension);               
             }
             else
             {
-                serviceCenter.ImgUrl = DefaulImagePath;
-            }
+                serviceCenter.ImgUrl = DefaulImagePath;               
+            }            
+
             this.data.SaveChanges();
+            return true;            
         }
 
         private void CalculateDistances()
@@ -145,9 +165,9 @@
 
                 var userLocationAsStrings = this.Session["userLocation"].ToString().Split(new char[] { ';' });
                 userLocation.Lat = double.Parse(userLocationAsStrings[0]);
-                userLocation.Lng = double.Parse(userLocationAsStrings[1]);                
+                userLocation.Lng = double.Parse(userLocationAsStrings[1]);
             }
-           
+
 
             var serviceCenters = this.data.CarServiceCenters.All();
 
@@ -172,6 +192,19 @@
                 }
             }
             this.data.SaveChanges();
+        }
+
+        private bool IsImageSizeFits(int imageSize)
+        {
+            
+            if ((imageSize >= MinImageSize && imageSize <= MaxImageSize) || imageSize == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            } 
         }
     }
 }
